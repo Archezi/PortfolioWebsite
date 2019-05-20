@@ -7,12 +7,10 @@
 
 .project {
     &__landing-page {
-        margin-bottom: 4rem;
         padding-bottom: 0;
         padding-top: 0;
         @include respond(phone) {
             padding-top: 7.2rem;
-            margin-bottom: 2rem;
         }
         .img-container{
             img {
@@ -22,7 +20,7 @@
         }
     }
     &__case-studies {
-        padding: 0;
+        // margin-top: 4rem;
         height: 100%;
         position: relative;
         box-sizing: border-box;

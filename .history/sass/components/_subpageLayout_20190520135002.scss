@@ -7,12 +7,10 @@
 
 .project {
     &__landing-page {
-        margin-bottom: 4rem;
         padding-bottom: 0;
         padding-top: 0;
         @include respond(phone) {
             padding-top: 7.2rem;
-            margin-bottom: 2rem;
         }
         .img-container{
             img {
@@ -22,8 +20,7 @@
         }
     }
     &__case-studies {
-        padding: 0;
-        height: 100%;
+        margin-top: 4rem;
         position: relative;
         box-sizing: border-box;
         background: $background-light;
@@ -173,20 +170,11 @@
     &__animation {
         position: relative;
         img {
-            width: 800px;
+            width: 100%;
             height: auto;
-            position: absolute;
+            position: relative;
             z-index: 10;
-            top: -200px;
-            left: -200px;
             opacity: 0.5;
-            @include respond(phone) {
-                width: 100%;
-                position: relative;
-                top: 0;
-                left: 0;
-                opacity: 1;
-            }
         }
         // grid-area: animation;
         // background-image: url(../../dist/pages/stitchingfairy/images/StitchingFiary-Mockup-MobileCollection.png);

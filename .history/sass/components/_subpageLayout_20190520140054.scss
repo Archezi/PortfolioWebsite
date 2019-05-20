@@ -12,7 +12,6 @@
         padding-top: 0;
         @include respond(phone) {
             padding-top: 7.2rem;
-            margin-bottom: 2rem;
         }
         .img-container{
             img {
