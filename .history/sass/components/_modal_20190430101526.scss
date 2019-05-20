@@ -1,0 +1,9 @@
+.modal {
+
+    &__content {
+        // background: $background-dark;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9999999!important;
+    }
+}

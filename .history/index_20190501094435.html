@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gurajada|Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+    <link rel="stylesheet" href="dist/css/style.comp.css">
+    <title>Starter Website</title>
+</head>
+<body>
+
+    <header class="header">
+        <div id="logo" class="logo">
+            <a href="index.html" class="logo__link" ><h2 class="logo__link-n">L.</h2><h2 class="logo__link-s">KACZMAREK</h2></a>
+        </div>
+        <div class="navigation">
+            
+            <input  type="checkbox" class="navigation__checkbox" onclick="toggleCheckbox()" id="navi-toggle" >
+            <label for="navi-toggle" class="navigation__button">
+                <svg class="navigation__button-icon" viewBox="0 0 12 12"><path d="M0 5.5h11.7v.8H0z"></path><path d="M5.5 0h.8v11.7h-.8z"></path></svg>
+            </label>
+            
+            <div class="navigation__background"></div>
+            
+            <div class="navigation__menu-wrapper">
+                <div class="navigation__menu-content">
+                    <nav class="navigation__menu-nav">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a  href="#landingPage" class="navigation__link" onclick="moveTo(DOMLinks.landingPageSection)" >Home</a></li>
+                            <li class="navigation__item"><a  href="#portfolio" class="navigation__link" onclick="moveTo(DOMLinks.portfolioSection)">Portfolio</a></li>
+                            <li class="navigation__item"><a  href="#aboutMe" class="navigation__link" onclick="moveTo(DOMLinks.aboutMeSection)">About</a></li>
+                            <li class="navigation__item"><a  href="#skills" class="navigation__link"  onclick="moveTo(DOMLinks.skillsSection)">Skills</a></li>
+                            <li class="navigation__item"><a  href="#contact" class="navigation__link" onclick="moveTo(DOMLinks.contactSection)">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="navigation__menu-contactInfo">
+                        <div class="reach_out">
+                            <span class="info_title">Reach Out</span>
+                            <span class="email_address">luka.kaczmarek@gmail.com</span>
+                        </div>
+                        <div class="social-media">
+                            <span class="info_title"><strong>Meet me in Social media</strong></span>
+                            <a href="">
+                                    <svg width="50px" height="50px"  viewBox="0 0 51.27 50"><path class="cls-1" d="M25.63,0a25.64,25.64,0,0,0-8.1,50c1.28.23,1.75-.56,1.75-1.24s0-2.63,0-4.77c-7.14,1.55-8.64-3-8.64-3-1.17-3-2.85-3.75-2.85-3.75-2.32-1.6.18-1.56.18-1.56a5.4,5.4,0,0,1,3.93,2.64c2.28,3.92,6,2.78,7.46,2.13A5.42,5.42,0,0,1,21,37c-5.7-.65-11.68-2.84-11.68-12.67a9.94,9.94,0,0,1,2.64-6.88,9.14,9.14,0,0,1,.25-6.78s2.15-.69,7,2.63a24.36,24.36,0,0,1,12.83,0c4.9-3.32,7.05-2.63,7.05-2.63a9.25,9.25,0,0,1,.25,6.78A9.94,9.94,0,0,1,42,24.29c0,9.85-6,12-11.71,12.65A6.14,6.14,0,0,1,32,41.69c0,3.43,0,6.19,0,7,0,.68.46,1.48,1.76,1.23A25.63,25.63,0,0,0,25.63,0Z"/><path class="cls-2" d="M9.71,36.8a.32.32,0,0,1-.44.08C9.08,36.8,9,36.62,9,36.5s.25-.17.44-.08.29.26.23.38Z"/><path class="cls-2" d="M10.75,38a.41.41,0,0,1-.53-.12c-.16-.18-.2-.42-.07-.53s.36-.06.52.12.2.42.08.53Z"/><path class="cls-2" d="M11.76,39.44c-.16.11-.42,0-.58-.22s-.15-.51,0-.61.41,0,.57.21.16.51,0,.62Z"/><path class="cls-2" d="M13.14,40.86c-.14.16-.44.12-.66-.09a.5.5,0,0,1-.14-.66c.14-.15.44-.11.66.1s.29.5.14.65Z"/><path class="cls-2" d="M15.05,41.69c-.06.2-.35.29-.64.21s-.48-.32-.42-.53.35-.29.64-.2.48.32.42.52Z"/><path class="cls-2" d="M17.15,41.85c0,.21-.24.38-.54.39s-.56-.17-.56-.38.24-.38.55-.39.55.17.55.38Z"/><path class="cls-2" d="M19.1,41.51c0,.21-.17.42-.48.48s-.57-.08-.61-.28.18-.42.48-.48.57.07.61.28Z"/></g></g></svg>
+                            </a>
+                            <a href="">
+                                    <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M30.3,17.5h-2.6c-0.5,0-1,0.5-1,0.9v2.6 h3.6c-0.1,2-0.4,3.9-0.4,3.9h-3.2v11.5H22V25h-2.3v-3.9H22V18c0-0.6-0.1-4.5,4.8-4.5h3.5V17.5z"></path></svg>
+                            </a>
+                            <a href="">
+                                    <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M34.1,20.3c0,0.2,0,0.4,0,0.6 c0,6.2-4.7,13.4-13.4,13.4c-2.7,0-5.1-0.8-7.2-2.1c0.4,0,0.7,0.1,1.1,0.1c2.2,0,4.2-0.8,5.9-2c-2.1,0-3.8-1.4-4.4-3.3 c0.3,0.1,0.6,0.1,0.9,0.1c0.4,0,0.8-0.1,1.2-0.2c-2.2-0.4-3.8-2.3-3.8-4.6c0,0,0,0,0-0.1c0.6,0.3,1.4,0.6,2.1,0.6 c-1.3-0.8-2.1-2.3-2.1-3.9c0-0.9,0.2-1.7,0.6-2.4c2.3,2.9,5.8,4.7,9.7,4.9c-0.3-1.3,0-2.7,0.6-4.1c2.7-2.5,5.8-2.1,7.4-0.3 c1.1-0.2,2.1-0.6,3-1.1c-0.4,1.1-1.1,2-2.1,2.6c1-0.1,1.9-0.4,2.7-0.7C35.9,18.8,35.1,19.6,34.1,20.3z"></path></svg>
+                            </a>
+                            <a href="">
+                                    <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M29,22.1c-1.8,0-2.7,1-3.1,1.7v0h0c0,0,0,0,0,0v-1.5h-3.5c0,1,0,10.4,0,10.4h3.5V27c0-0.3,0-0.6,0.1-0.8 c0.3-0.6,0.8-1.3,1.8-1.3c1.3,0,1.8,1,1.8,2.4v5.5h3.5v-6C32.9,23.6,31.2,22.1,29,22.1z"></path><path d="M18.8,17.4c-1.2,0-2,0.8-2,1.8c0,1,0.7,1.8,1.9,1.8h0c1.2,0,2-0.8,2-1.8C20.7,18.1,20,17.4,18.8,17.4z"></path><rect x="17" y="22.4" width="3.5" height="10.4"></rect><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.4,34.9c0,0.9-0.8,1.6-1.7,1.6H15.3 c-0.9,0-1.7-0.7-1.7-1.6V15.1c0-0.9,0.8-1.6,1.7-1.6h19.5c0.9,0,1.7,0.7,1.7,1.6V34.9z"></path></svg>
+                            </a>
+                                
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <div class="navigation__legal">
+                        <span class="navigation__legal-mobile-nav"> © 2018 Lukasz Kaczmarek. All Rights Reserved.</span>
+                </div>
+                
+        
+                
+            </div>    
+        </div>
+
+    </header>
+    <!-- HEADER fixed top -->
+    <div class="wrapper">
+        <div id="container" class="container">
+            
+            <section id="landingPage" class="section landing__page">
+                <div class="img__container">
+                    <svg version="1.1" id="Layer_1"  x="0px" y="0px"viewBox="0 0 1366 768"  >
+                        <path       fill="none" stroke="black" stroke-width="1" class="st0" d="M522.7,421.4l-28.1-138.7l28.1,16.4l-28.1,138.5l134,44.9V515l0,0L522.7,421.4z"/>
+                        <polygon    fill="none" stroke="black" stroke-width="1" class="st0" points="777.6,282.9 777.6,437.6 643.6,515 643.6,482.5 749.5,421.4 749.5,299.1 "/>
+                        <polygon    fill="none" stroke="black" stroke-width="1" class="st0" points="777.6,267 747.9,284.1 636.1,219.5 524.3,284.1 494.6,267 636.1,185.3 777.2,266.7 "/>
+                        <path       fill="none" stroke="black" stroke-width="1" class="st0" d="M749.5,299.1"/>
+                        <path       fill="none" stroke="black" stroke-width="1" class="st0" d="M804.9,372.5"/>
+                        <path       fill="none" stroke="black" stroke-width="1" class="st0" d="M643.6,515"/>
+                        <polyline   fill="none" stroke="black" stroke-width="1" class="st0" points="643.6,515 811.6,366.5 749.5,299.1 "/>
+                        <polyline   fill="none" stroke="black" stroke-width="1" class="st0" points="524.3,284.1 636.1,185.3 636.1,219.5 777.6,267 "/>
+                    </svg>
+                </div>
+                <div class="introduction">
+                    <div class="introduction__container">
+                        <div class="introduction__name">
+                            Lukasz Kaczmarek
+                        </div>
+                        <div class="introduction__description">
+                            Junior Front-end Developer
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Landing Page end -->
+            <section id="portfolio" class="section portfolio">
+                <div class="portfolio__top">
+                    <div class="inner-wrapper">
+                        <div class="portfolio__title">
+                            <div class="portfolio__title-main">
+                                <h2>
+                                    <div class="trev-1 text-animation">
+                                        <div class="text-animation-content">
+                                            Created with 
+                                        </div>
+                                    </div>
+                                    <div class="trev-2 text-animation">
+                                        <div class="text-animation-content">
+                                            <span>passion</span>
+                                        </div>
+                                    </div>
+                                </h2>
+                            </div>
+
+                            <div class="portfolio__title-secondary">
+                                <h3>
+                                    <span class="portfolio__title-secondary-text">
+                                       <strong> Collection of my recent design and development work</strong>
+                                    </span>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio__bottom">
+                    <div class="portfolio__filtering portfolio__filtering--navbar">
+                        <ul class="portfolio__filtering--group">
+                            <li class="portfolio__filtering--item" data-filter=".html">HTML</li>
+                            <li class="portfolio__filtering--item" data-filter=".css">CSS</li>
+                            <li class="portfolio__filtering--item" data-filter=".javascript">Javascript</li>
+                            <li class="portfolio__filtering--item" data-filter=".angular">Angular</li>
+                        </ul>
+                    </div>
+
+                    <div class="grid portfolio__content">
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2018</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">Stitching Fairy</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Web Design / Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="#" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="dist/pages/stitchingfairy/stitchingfairy.html" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2017</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">Urban Sound</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Web Design / Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="http://archezi.github.io/UrbanSound/" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="dist/pages/urbansound/urbansound.html" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2018</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">New Providance</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Web Design / Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="#" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="dist/pages/newprovidance/newprovidance.html" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2018</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">Explore App</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Web Design / Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="#" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="#" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2019</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">Javascript Lab</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="#" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="#" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="element-item portfolio__element">
+                            <div class="inner-wrapper portfolio__element--content">
+                                <div class="portfolio__element--wrapper">
+                                    <div class="portfolio__element--left">
+                                        <div class="portfolio__element--iteration-number">
+                                            <span>2019</span>
+                                        </div>
+                                        <div class="portfolio__element--title">
+                                            <h3>
+                                                <div class="portfolio__element--title-name">Angular Lab</div>
+                                            </h3>
+                                            <div class="portfolio__element--title-specifications">Development</div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio__element--right">
+                                        <div class="portfolio__element--button-group">
+                                            <a href="#" class="portfolio__element--button-view-project">VIEW PROJECT</a>
+                                            <span class="portfolio__element--button-separator">/</span>
+                                            <a href="#" class="portfolio__element--button-case-studies">CASE Studies</a>
+                                        </div>
+                                    </div>
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- portfolio section end  -->
+            <section id="skills" class="section skills">
+                <div class="inner-wrapper">
+                    <div class="skills__title">
+                        <h2>
+                            <div id="trev-3" class="text-animation">
+                                <div class="text-animation__content">
+                                    <span>
+                                        Skills &
+                                    </span> 
+                                </div>
+                            </div>
+                            <div id="trev-4" class="text-animation">
+                                <div class="text-animation__content">
+                                    Competencies
+                                </div>
+                            </div>
+                        </h2>
+                        
+                        
+                    </div>
+                    <!-- Title of the skills section-->
+                </div>
+                <div class="skills__content inner-wrapper">
+                    <div class="description__wrapper">
+                        <div class="description__content">
+                            <div class="description__heading">
+                                <h3 id="description__heading">
+                                    I have learned that I still have a lot to learn
+                                </h3>
+                            </div>
+                            <div class="description__text">
+                                <p id="description__text">
+                                        ui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-list__wrapper">
+                        <ul class="skill-list__set">
+                            <li class=" skill-list__heading">Language</li>
+                            <li onclick="replaceMain('javascript')" id="skill-javascript" class="skill-list__element shine is-active ">JAVASCRIPT</li>
+                            <li id="skill-css" class="skill-list__element">CSS</li>
+                            <li id="skill-html" class="skill-list__element">HTML</li>
+                        </ul>
+                        <ul class="skill-list__set">
+                            <li id="skill-designTolls" class=" skill-list__heading">Design & Tolls</li>
+                            <li id="skill-illustrator" class="skill-list__element">Illustrator</li>
+                            <li id="skill-photoshop" class="skill-list__element">Photoshop</li>
+                            <li id="skill-webDesign" class="skill-list__element">Web Design</li>
+                            <li id="skill-uxui" class="skill-list__element">UX/UI</li>
+                            <li id="skill-invision" class="skill-list__element">Invision</li>
+                            <li id="skill-javascript"class="skill-list__element">AdobeXD / Balsamiqu</li>
+                        </ul>
+                        <ul class="skill-list__set">
+                            <li class=" skill-list__heading">Development Tools</li>
+                            <li class="skill-list__element">Angular</li>
+                            <li class="skill-list__element">Bootstrap</li>
+                            <li class="skill-list__element">Github</li>
+                            <li class="skill-list__element">NPM</li>
+                            <li class="skill-list__element">SASS</li>
+                        </ul>
+                        <ul class="skill-list__set">
+                            <li class=" skill-list__heading">Soft Skills</li>
+                            <li class="skill-list__element">Creativity</li>
+                            <li class="skill-list__element">Problem Solving</li>
+                            <li class="skill-list__element">Teamwork</li>
+                            <li class="skill-list__element">Time management</li>
+                            <li class="skill-list__element">Determination</li>
+                            <li class="skill-list__element">Work ethic</li>
+                            <li class="skill-list__element">Responsibility</li>
+                            <li class="skill-list__element">Patience</li>
+                        </ul>
+                    
+                    </div>
+                    <div class="skills__list-background"></div>
+                    
+                </div>
+            </section>
+            <!-- skills section end  -->
+            <section id="aboutMe" class="section aboutMe">
+                <div class="inner-wrapper">
+                    <div class="about__content">
+                        <div class="about__information">
+                            <div class="about__title">
+                                <h2>
+                                    <div id="trev-5" class="text-animation">
+                                        <div class="text-animation__content">
+                                            <span>About</span>
+                                        </div>
+                                    </div>
+                                </h2>
+                            </div>
+                            <h3 class="about__sub-heading">
+                                    Hi, I am Lukasz Kaczmarek, <br>  FRONT-END developer from Dublin
+                            </h3>
+                            
+                            <div class="about__paragraph">
+                                <p>
+                                        I enjoy turning complex problems into simple, beautiful and intuitive interface designs. 
+                                        
+                                </p>
+                                <p>
+                                        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla 
+                                </p>
+                            </div>
+
+                            <div class="about__profile-links">
+                                <div class="about__cvButton">Curriculum Vitae</div>
+                                <div class="about__linkedIn"><img src="dist/images/icons/LinkedIn.svg" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="about__profile-picture-container">
+                            <img class="profile-picture" src="dist/images/about/lukasz_kaczmarek_profile_picturejpg.jpg" alt="">
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <!-- about me section end -->
+            <section class="section contact" id="contact">
+                <div class="inner-wrapper">
+                    <div class="contact__content">
+                        <div class="contact__title">Get in touch!</div>
+                        <div class="contact__sub-heading">I AM AVAILABLE FOR HIRE!</div>
+                        <div class="contact__email">luka.kaczmarek@gmail.com</div>
+                        <div class="contact__phone">+353 (0) 872683455 </div>
+                    </div>
+                </div>
+            </section>
+            <!-- contact section end -->
+
+            
+            <section class="section legal">
+                <div class="legal__copyright">COPYRIGHT © 2018 LUKASZ KACZMAREK</div>
+            </section>
+            <!-- legal section end  -->
+
+
+        </div>
+
+        
+    </div>
+
+    <footer class="footer">
+        
+    </footer>
+
+
+    <div id="modal_1" class="modal">
+        <div class="modal__content">
+            <!-- Slider main container -->
+            <span class="modal__close">&times;</span>
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner-wrapper">
+                            <div class="swiper-slide-heading"> <h2>JAVASCRIPT</h2></div>
+                            <div class="swiper-slide-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero laborum voluptate labore doloribus, dolorem voluptatum suscipit recusandae, officiis ea totam beatae quo! Ea, officiis quidem commodi sapiente veritatis soluta?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero laborum voluptate labore doloribus, dolorem voluptatum suscipit recusandae, officiis ea totam beatae quo! Ea, officiis quidem commodi sapiente veritatis soluta?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero laborum voluptate labore doloribus, dolorem voluptatum suscipit recusandae, officiis ea totam beatae quo! Ea, officiis quidem commodi sapiente veritatis soluta?
+                            </div>
+                            <div class="swiper-slide-footer">
+                                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="js" class="svg-inline--fa fa-js fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" >
+                                        <path fill="currentColor" d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path>
+                                    </svg>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner-wrapper">
+                            <div class="swiper-slide-heading"> <h2>JAVASCRIPT</h2></div>
+                            <div class="swiper-slide-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero laborum voluptate labore doloribus, dolorem voluptatum suscipit recusandae, officiis ea totam beatae quo! Ea, officiis quidem commodi sapiente veritatis soluta?
+                            </div>
+                            <div class="swiper-slide-footer"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide-inner-wrapper">
+                            <div class="swiper-slide-heading"> <h2>JAVASCRIPT</h2></div>
+                            <div class="swiper-slide-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis vero laborum voluptate labore doloribus, dolorem voluptatum suscipit recusandae, officiis ea totam beatae quo! Ea, officiis quidem commodi sapiente veritatis soluta?</div>
+                            <div class="swiper-slide-footer"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+</div>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/barba.min.js"></script>
+    <script src="dist/js/pageTransition.js"></script>
+    <script src="dist/js/swiper.min.js" ></script>
+
+    <script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="dist/js/sectionSliding.js"></script>
+    <script src="dist/js/myslider.js" ></script>
+    <script src="dist/js/myscript.js"></script>
+</body>
+</html>

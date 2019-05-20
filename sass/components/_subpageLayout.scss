@@ -1,0 +1,179 @@
+
+
+
+.project {
+    &__landing-page {
+        padding-bottom: 0;
+        padding-top: 0px;
+        @include respond(phone) {
+            padding-top: 7.2rem;
+        }
+        .img-container{
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &__case-studies {
+        margin-top: 4rem;
+        position: relative;
+        box-sizing: border-box;
+        background: $background-light;
+        @include respond(phone) {
+            margin-top: 0;
+        }
+        
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+        "slider slider"
+        "description animation"
+        "information animation";
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "title"
+            "slider"
+            "description"
+            "animation"
+            "information";
+
+        }
+    }
+    &__title {
+        grid-area: title;
+        .name {
+            font-size: $heading-primary-fs;
+            text-transform: uppercase;
+            @include lineAfterHeadings;
+            @include respond(phone) {
+                font-size: $heading-primary-fs-mobile;
+                @include lineAfterHeadingsMobile;
+            }
+        }
+        .author {
+            font-size: $default-fs;
+            font-family: $font-secondary;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-left: 0.5rem;
+            &-notation {
+                font-weight: 300;
+            }
+            @include respond(phone) {
+                font-size: $smaller-fs;
+            }
+        }
+    }
+
+    &__slider {
+        grid-area: slider;
+    }
+    &__description {
+        grid-area: description;
+        z-index: 12;
+        &-paragraph {
+            @include defaultParagraph;
+            // max-width: 40rem;
+            margin-bottom: 2rem;
+        }
+    }
+    &__information {
+        grid-area: information;
+        font-family: $font-secondary;
+        font-size: $default-fs;
+        z-index: 11;
+        &-title {
+            font-family: $font-primary;
+            font-size: $heading-secondary-fs;
+            margin-bottom: 2rem;
+        }
+        &-year {
+            display: flex;
+            padding-bottom: 1rem;
+            .year-name {
+                color: $text-light;
+            }
+            .year-data {
+                padding-left: 1rem;
+            }
+        }
+        &-type {
+            display: flex;
+            padding-bottom: 1rem;
+            .type-name {
+                color: $text-light;
+            }
+            .type-data {
+                padding-left: 1rem;
+            }
+            .data-list {
+                padding-bottom: 0.5rem;
+            }
+        }
+        &-links {
+            display: flex;
+            padding-bottom: 1rem;
+            .link-name {
+                color: $text-light;
+            }
+            .link-data {
+                padding-left: 1rem;
+            }
+            .data-list {
+                padding-bottom: 0.5rem;
+                margin-bottom: 0.5rem;
+                transition: all 0.5s ease-in-out;
+                position: relative;
+                a {
+                    // color: $text-dark;
+                    text-decoration: none;
+                    color: $color-link-hover;
+                    
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%) scaleX(0);
+                        transform-origin: 50% 50%;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgba(31, 31, 31, 0.8);
+                        transition: transform 250ms;
+                    }
+                    &:hover {
+                        // color: $color-link-hover;
+                        &::after {
+                            content: '';
+                            transform: translateX(-50%) scaleX(1);
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    &__animation {
+        position: relative;
+        img {
+            width: 800px;
+            height: auto;
+            position: absolute;
+            z-index: 10;
+            top: -200px;
+            left: -200px;
+            opacity: 0.5;
+        }
+        // grid-area: animation;
+        // background-image: url(../../dist/pages/stitchingfairy/images/StitchingFiary-Mockup-MobileCollection.png);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // overflow: visible;
+    }
+    
+}

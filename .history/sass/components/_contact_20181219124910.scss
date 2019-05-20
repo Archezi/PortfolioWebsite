@@ -1,0 +1,27 @@
+.contact {
+    background: $background-dark; 
+    color: $white;
+    
+
+    &__content {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        max-width: $content-width;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: $heading-primary-fs;
+
+    }
+    &__sub-heading {
+        font-size: $heading-tertiary-fs;
+        font-family: $font-secondary;
+    }
+    &__email {
+
+    }
+    &__phone {
+
+    }
+}

@@ -1,0 +1,70 @@
+// HEADER
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 110;
+    padding: $pad-calc;
+    // box-sizing: border-box;
+    // padding-left: calc(25px + 49 * ((100vw - 320px) / 1600));
+    // padding-right: calc(25px + 49 * ((100vw - 320px) / 1600));
+    @include respond(phone) {
+        padding: 1rem 2rem;
+        background: $white;
+    }
+}
+.logo {
+    transition: all .25s ease-in-out;
+    &__link {
+        position: relative;
+
+        // top: 6rem;
+        // left: 6rem;
+        width: 30rem;
+        display: flex;
+        text-decoration: none;
+        color: $black;
+        font-size: 3.6rem;
+        font-weight: 700;
+        z-index: 1500;
+        @include respond(phone ) {
+            max-width: 20rem;
+        }
+
+        &-s {
+           width: 0;
+           visibility: hidden;
+           opacity: 0;
+           transition: all .25s ease-in-out;
+           @include respond(phone) {
+               opacity: 1;
+               visibility: visible;
+               width: 100%;
+           }
+        }
+        &-s-visible {
+            visibility: visible;
+            width: 100%;
+            opacity: 1;
+            
+            z-index: 1500;
+        }
+        &-n {
+            margin-left: 0;
+            transition: all .25s ease-in-out;
+        }
+        &-n-open {
+            margin-left: 20px;
+        }
+        
+    }
+    
+    
+    
+}

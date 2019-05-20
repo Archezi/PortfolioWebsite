@@ -1,0 +1,12 @@
+.legal {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    height: 5rem;
+    background-color: $background-light;
+    padding: 0;
+    &__copyright {
+        font-size: $smaller-fs;
+        font-family: $font-secondary;
+    }
+}

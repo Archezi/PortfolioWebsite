@@ -1,0 +1,71 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content };     //900px
+    }
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content };    //1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) { @content };    //1800
+    }
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin absCenterX {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin absCenterY {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin defaultParagraph {
+    font-family: $font-secondary;
+    line-height: 1.6;
+    font-weight: 300;
+    font-size: $default-fs;
+}
+
+@mixin transitionPortfolio {
+    -webkit-transition: all .5s cubic-bezier(.4,0,.2,1);
+    -moz-transition: all .5s cubic-bezier(.4,0,.2,1);
+    -o-transition: all .5s cubic-bezier(.4,0,.2,1);
+    -ms-transition: all .5s cubic-bezier(.4,0,.2,1);
+    transition: all .5s cubic-bezier(.4,0,.2,1);
+}
+
+@mixin lineAfterHeadings {
+    
+    span::after {
+        content: '';
+        display: inline-block;
+        width: 15rem;
+        height: 0.2rem;
+        background: $text-dark;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+}
+@mixin lineAfterHeadingsMobile {
+    
+    span::after {
+        content: '';
+        display: inline-block;
+        width: 10rem;
+        height: 0.2rem;
+        background: $text-dark;
+        margin-bottom: 1.5rem;
+        margin-left: 1rem;
+    }
+}

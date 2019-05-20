@@ -1,0 +1,78 @@
+.aboutMe {
+
+    .about {
+        &__content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: $content-width;
+            margin: 0 auto;
+            @include respond(phone) {
+                grid-template-columns: 1fr;
+
+            }
+        }
+        // Information styling 
+        &__information {
+            @include respond(phone) {
+                padding: 0 2rem;
+            }
+        }
+        &__title,
+        &__sub-heading,
+        &__paragraph {
+            max-width: 40rem;
+        }
+        &__title{
+            font-size: $heading-primary-fs;
+            @include lineAfterHeadings;
+            @include respond(phone) {
+                font-size: $heading-primary-fs-mobile;
+                @include lineAfterHeadingsMobile;
+            }
+        }
+        &__sub-heading {
+            font-size: $heading-secondary-fs;
+            margin: $sub-heading-margin;
+        }
+        &__paragraph {
+            @include defaultParagraph;
+        }
+        &__profile-links {
+            position: relative;
+            display: flex;
+            margin: 2rem 0;
+        }
+        &__cvButton {
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 5rem;
+            width: 20rem;
+            font-size: $bigger-fs;
+            font-family: $font-secondary;
+            border: 1px solid $text-dark;
+            text-align: center;
+            line-height: 3rem;
+            padding: 1rem;
+        }
+        &__linkedIn {
+            margin-left: 1rem;
+            img {
+                height: 5rem;
+                width: auto;
+            }
+        }
+
+        // Image styling
+        &__profile-picture-container {
+            img.profile-picture {
+                width: 100%;
+                height: auto;
+            }
+            
+            
+            
+        }
+    }
+}

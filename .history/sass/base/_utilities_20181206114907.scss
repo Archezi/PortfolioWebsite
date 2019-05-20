@@ -1,0 +1,2 @@
+$pad-calc: calc(20px + 40 * ((100vw - 320px) / 1600));
+$containerHeight: calc(100vh -  (2 * (20px + 40 * ((100vh - 320px) / 1600))) );

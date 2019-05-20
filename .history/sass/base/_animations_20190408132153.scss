@@ -1,0 +1,28 @@
+@keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  @keyframes show {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+
+  @keyframes shine1 {
+	0%, 10% {
+		background-position: -1000px;
+	}
+	20% {
+		background-position: top left;
+	}
+	90% {
+		background-position: top right;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}

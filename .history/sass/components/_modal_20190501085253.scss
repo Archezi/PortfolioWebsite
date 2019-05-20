@@ -1,0 +1,54 @@
+.modal {
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.8rem;
+    }
+    &__content {
+        background: $background-dark;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999999!important;
+        color: #fff;
+    }
+
+
+    .swiper {
+
+        &-container {
+            height: 100%;
+            width: 100%;
+        }
+        &-wrapper {
+
+        }
+        &-slide {
+            display: grid;
+            grid-template-columns: 1fr;
+            &-heading {
+                font-size: $heading-secondary-fs;
+
+            }
+            &-content {
+
+            }
+            &-footer {
+
+            }
+        }
+        
+        &-button-prev {
+            color: #fff;
+        }
+        &button-next {
+
+        }
+    }
+}

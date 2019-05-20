@@ -1,0 +1,398 @@
+.portfolio {
+    position: relative;
+    box-sizing: border-box;
+    background: $background-light;
+    &__top {
+
+    }
+    &__title {
+        width: $content-width;
+        margin: 2rem auto 5rem;
+        @include respond(phone) {
+            width: $content-width-mobile;
+            padding: 0 2rem;
+        }
+        &-main {
+            margin-bottom: 4rem;
+            h2 {
+                font-size: $heading-primary-fs;
+                line-height: 0.6;
+                @include lineAfterHeadings;
+                
+                @include respond(phone) {
+                    font-size: $heading-primary-fs-mobile;
+                    @include lineAfterHeadingsMobile;
+                }
+            }
+
+            
+        }
+        &-secondary {
+            font-size: $default-fs;
+            font-family: $font-secondary;
+            font-weight: 600;
+        }
+    }
+    // Bottom part
+    &__bottom {
+        padding-top: 10rem;
+    }
+
+    // FILTERING  BAR
+    &__filtering {
+        width: $content-width;
+        margin: 0 auto;
+        
+        &--navbar {
+            font-family: $font-secondary;
+            font-size: $smaller-fs;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+        }
+        &--group {
+            display: flex;
+            align-items: center;
+            
+        }
+        &--item {
+            padding: 1rem 1rem 1rem 0;
+            cursor: pointer;
+        }
+    }
+    /*
+    ============================================
+    == MAIN PART OF THE PORTFOLIO SECTION
+    */
+    &__content {
+        padding-top: 2rem;
+        
+    }
+    /*
+    =========================================
+    == Element
+    */
+    &__element--content {
+        z-index: 3;
+        @include respond(phone) {
+            margin: 0;
+        }
+        
+    }
+    &__element {
+        position: relative;
+        width: 100%;
+        height: 22rem;
+        display: grid;
+        background-color: $background-light-darken;
+        border-top: 1px solid $element-border;
+        align-items: center;
+        z-index: 2;
+        @include transitionPortfolio;
+        @include respond(phone) {
+            padding: 0 2rem;
+            width: 100vw;
+        }
+        &:nth-of-type(1) {
+            background: url(../../dist/images/portfolio/stitchingfairy/stitching_fairy-portfolio-elment-background.jpg) center no-repeat;
+            background-size: cover;
+            &::after {
+                background: rgba(242,69,69,1);
+                background: -moz-linear-gradient(45deg, rgba(242,69,69,1) 0%, rgba(235,193,141,0.6) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(242,69,69,1)), color-stop(100%, rgba(235,193,141,0.6)));
+                background: -webkit-linear-gradient(45deg, rgba(242,69,69,1) 0%, rgba(235,193,141,0.6) 100%);
+                background: -o-linear-gradient(45deg, rgba(242,69,69,1) 0%, rgba(235,193,141,0.6) 100%);
+                background: -ms-linear-gradient(45deg, rgba(242,69,69,1) 0%, rgba(235,193,141,0.6) 100%);
+                background: linear-gradient(45deg, rgba(242,69,69,1) 0%, rgba(235,193,141,0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f24545', endColorstr='#ebc18d', GradientType=1 );
+            }
+        }
+        &:nth-of-type(2) {
+            background: url(../../dist/images/portfolio/urbansound/ubransound.jpg) center no-repeat;
+            background-size: cover;
+            &::after {
+
+                background: rgba(78,0,188,1);
+                background: -moz-linear-gradient(45deg, rgba(78,0,188,1) 0%, rgba(41,170,226,0.6) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(78,0,188,1)), color-stop(100%, rgba(41,170,226,0.6)));
+                background: -webkit-linear-gradient(45deg, rgba(78,0,188,1) 0%, rgba(41,170,226,0.6) 100%);
+                background: -o-linear-gradient(45deg, rgba(78,0,188,1) 0%, rgba(41,170,226,0.6) 100%);
+                background: -ms-linear-gradient(45deg, rgba(78,0,188,1) 0%, rgba(41,170,226,0.6) 100%);
+                background: linear-gradient(45deg, rgba(78,0,188,1) 0%, rgba(41,170,226,0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4e00bc', endColorstr='#29aae2', GradientType=1 );
+            }
+        }
+        &:nth-of-type(3) {
+            background: url(../../dist/images/portfolio/provident/newprovidance.jpg) center no-repeat;
+            background-size: cover;
+
+            &::after {
+                background: rgba(46,49,146,1);
+                background: -moz-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(46,49,146,1)), color-stop(100%, rgba(27,255,255,0.6)));
+                background: -webkit-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -o-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -ms-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3192', endColorstr='#1bffff', GradientType=1 );
+
+            }
+        }
+        &:nth-of-type(4) {
+            background: url(../../dist/images/portfolio/exploreapp/exploreapp.jpg) center no-repeat;
+            background-size: cover;
+
+            &::after {
+                background: rgba(46,49,146,1);
+                background: -moz-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(46,49,146,1)), color-stop(100%, rgba(27,255,255,0.6)));
+                background: -webkit-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -o-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: -ms-linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                background: linear-gradient(45deg, rgba(46,49,146,1) 0%, rgba(27,255,255,0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2e3192', endColorstr='#1bffff', GradientType=1 );
+
+            }
+        }
+        &:nth-of-type(5) {
+            background: url(../../dist/images/portfolio/javascript/Javascript.png) center no-repeat;
+            background-size: cover;
+
+            &::after {
+                background: rgba(251,137,43,1);
+                background: -moz-linear-gradient(45deg, rgba(251,137,43,1) 0%, rgba(218,224,33,0.6) 100%);
+                background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(251,137,43,1)), color-stop(100%, rgba(218,224,33,0.6)));
+                background: -webkit-linear-gradient(45deg, rgba(251,137,43,1) 0%, rgba(218,224,33,0.6) 100%);
+                background: -o-linear-gradient(45deg, rgba(251,137,43,1) 0%, rgba(218,224,33,0.6) 100%);
+                background: -ms-linear-gradient(45deg, rgba(251,137,43,1) 0%, rgba(218,224,33,0.6) 100%);
+                background: linear-gradient(45deg, rgba(251,137,43,1) 0%, rgba(218,224,33,0.6) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fb892b', endColorstr='#dae021', GradientType=1 );
+
+            }
+        }
+        &:nth-of-type(6) {
+            background: url(../../dist/images/portfolio/angular/ANGULAR.png) center no-repeat;
+            background-size: cover;
+
+            &::after {
+               
+
+            }
+        }
+        &:last-of-type {
+            border-bottom: 1px solid $element-border;
+        }
+
+        &:hover * {
+            color: $white;
+            
+
+        }
+        &:hover {
+            .portfolio__element--iteration-number span::before {
+                background-color: $white;
+            }
+        }
+
+        &:hover::before {
+            transform-origin: right;
+            width: 0;
+            
+        }
+        &:hover {
+            .portfolio__element--button-group {
+                opacity: 1;
+                transition-delay: 0.2s;
+
+            }
+        }
+
+        &--wrapper {
+            
+            width: $content-width;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            justify-content: space-between;
+            @include respond(phone) {
+                grid-template-areas: 
+                "I T"
+                ". R";
+                grid-template-columns: 1fr;
+                width: $content-width-mobile;
+                
+            }
+            
+        }
+        // LEFT PART
+        &--left {
+            display: flex;
+        }
+        &--iteration-number {
+            font-family: $font-secondary;
+            font-size: $smaller-fs;
+            padding: 2rem 2rem 2rem 0;
+            grid-area: I;
+            span::before {
+                    
+                content: '';
+                margin-left: -101rem;
+                display: inline-block;
+                width: 100rem;
+                height: 0.1rem;
+                background: $text-dark;
+                margin-bottom: 0.6rem;
+                margin-right: 1rem;
+            } 
+        }
+        &--title {
+            
+            padding: 2.2rem 2rem 2rem 0;
+            height: 10rem;
+            display: grid;
+            grid-gap: 1rem;
+            align-items: start;
+            margin: 0;
+            line-height: 1.2rem;
+            grid-area: T
+
+            &-name {
+                font-family: $font-primary;
+                font-size: $heading-tertiary-fs;
+
+                margin-bottom: 1rem;
+            }
+            &-specifications {
+                font-family: $font-secondary;
+                font-size: $smaller-fs;
+            }
+        }
+        // RIGHT PART
+        &--right  {
+            justify-self: end;
+            grid-area: R;
+            @include respond(phone) {
+                justify-self: start;
+            }
+            
+        }
+        &--button  {
+            color: $text-dark;
+            &-group {
+                display: flex;
+                padding: 2rem;
+                font-family: $font-secondary;
+                font-size: $xs-fs;
+                align-items: center;
+                opacity: 0;
+                transition: all .5s cubic-bezier(.4,0,.2,1);
+                
+                .case-study-link {
+                    padding: 1rem;
+                    border:  solid 0.05rem $element-border;
+                    border-radius: 2rem;
+                    margin-right: 1rem;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+                .direct-link {
+                    position: relative;
+
+                    .link-circle {
+                        border: solid 0.05rem $element-border;
+                        border-radius: 50%;
+                        padding: 1rem;
+                        // background: $background-dark;
+                        transition: all .5s cubic-bezier(.4,0,.2,1);
+                    }
+                    svg {
+                        stroke: $white;
+                        transition: all .5s cubic-bezier(.4,0,.2,1);
+                        transition-delay: 0.1s;
+                    }
+                    &:hover {
+                        .link-circle {
+                            border-color: $link-hover;
+                        }
+                        .tooltip {
+                            opacity: 1;
+                            transition-delay: 0.5s;
+                            
+                            transition: all 0.3s ease-out;
+                        }
+                        svg {
+                            // stroke: $black;
+                        }
+                    }
+
+                    // Tooltip
+                    .tooltip {
+                        opacity: 0;
+                        position: absolute;
+                        top: -1.5rem;
+                        left: 100%;
+                        width: 10rem;
+                        transition-delay: 0.5s;
+                        transition: all 0.1s ease-out;
+                        
+                    }
+                    .tooltip-text {
+                        color: $white;
+                        text-align: center;
+                        padding: 0.05rem 0;
+                        border-radius: 0.06rem;
+
+                    }
+                }
+            }
+
+
+            // &-view-project,
+            // &-separator,
+            // &-case-studies {
+            //     color: $text-dark;
+            //     text-transform: none;
+            //     text-decoration: none;
+            // }
+                
+            
+        }
+
+    }
+    
+    &__element::before {
+
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+        width: 100vw;
+        background-color: $background-light-darken;
+        height: 100%;
+        
+        transition: all .5s cubic-bezier(.4,0,.2,1);
+    
+    }
+    &__element::after {
+
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    
+    }
+    &__element:hover {
+        &::before {
+            content: '';
+            opacity: 1;
+        }
+    }
+    
+}

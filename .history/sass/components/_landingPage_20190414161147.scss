@@ -1,0 +1,57 @@
+$vw_50: calc(100vw / 2);
+
+
+.landing__page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: $background-light;
+    z-index: 110;
+    .img__container {
+        width: 100%;  ;
+        height: auto ;
+        @include absCenter;
+        svg {
+            
+            animation: show;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            transform: scale(1.5);
+            
+            path, polyline, polygon {
+                
+                fill-opacity: 0;
+                stroke: rgba(0, 0, 0, 0.3);
+                stroke-width: 1;
+                stroke-dasharray: 3319;
+                stroke-dashoffset: 3319;
+                animation-name: draw;
+                animation-duration: 10s;
+                animation-delay: 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                animation-timing-function: linear;
+                }
+            }
+          
+          
+    }
+
+    .introduction {
+        @include absCenterY;
+        top: 45%;
+        left: 24%;
+        &__name {
+            font-size: 3.6rem;
+            font-family: $font-primary;
+        }
+        &__description {
+            font-size: 1.4rem;
+            font-family: $font-secondary;
+        }
+
+    }
+   
+}
+
+

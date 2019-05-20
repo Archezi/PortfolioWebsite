@@ -1,0 +1,64 @@
+.modal {
+
+    &__close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.8rem;
+    }
+    &__content {
+        background: $background-dark;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9999999!important;
+        color: #fff;
+    }
+
+
+    .swiper {
+
+        &-container {
+            
+            
+        }
+        &-wrapper {
+            
+        }
+        &-slide {
+            
+            &-inner-wrapper {
+                padding: 2rem;
+            }
+            &-heading {
+                font-family: $font-primary;
+                font-size: $heading-secondary-fs;
+                height: 10vh;
+                padding-top: 10vh;
+                align-self: end;
+
+            }
+            &-content {
+                font-family: $font-secondary;
+                font-size: $default-fs;
+                line-height: 1.6;
+                height: 70vh;
+
+            }
+            &-footer {
+                height: 10vh;
+            }
+        }
+        
+        &-button-prev {
+            color: #fff;
+        }
+        &button-next {
+
+        }
+    }
+}

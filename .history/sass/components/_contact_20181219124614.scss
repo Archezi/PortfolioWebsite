@@ -1,0 +1,23 @@
+.contact {
+    background: $background-dark; 
+    color: $white;
+    
+
+    &__content {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+    }
+    &__title {
+
+    }
+    &__sub-heading {
+
+    }
+    &__email {
+
+    }
+    &__phone {
+
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    
+
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+// BASE STRUCTURE
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    overflow: hidden;
+}
+.inner-wrapper {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.container {
+   
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-right: 19px;
+    box-sizing: content-box;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    // padding-right: 0px; /* exact value is given in JavaScript code */
+}
+.footer {
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+}
+
+.section {
+    position: relative;
+    padding: 10rem 0;
+    
+    padding-right: 0;
+    box-sizing: content-box;
+    overflow-x: hidden !important;
+    padding-right: 0px; /* exact value is given in JavaScript code */
+    @include respond(phone) {
+        padding-top: 2rem;
+    }
+}
+
+
+
