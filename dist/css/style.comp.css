@@ -1043,9 +1043,11 @@ body {
 .project__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 4rem;
   grid-template-areas: "title title" "slider slider" "description animation" "information animation"; }
   @media only screen and (max-width: 37.5em) {
     .project__wrapper {
+      padding: 0 2rem;
       grid-template-columns: 1fr;
       grid-template-areas: "title" "slider" "description" "animation" "information"; } }
 
@@ -1064,7 +1066,7 @@ body {
       margin-left: 1rem; }
     @media only screen and (max-width: 37.5em) {
       .project__title .name {
-        font-size: 8rem; }
+        font-size: 5rem; }
         .project__title .name span::after {
           content: '';
           display: inline-block;
@@ -1087,6 +1089,8 @@ body {
 
 .project__slider {
   grid-area: slider; }
+  .project__slider img {
+    width: 100%; }
 
 .project__description {
   grid-area: description;

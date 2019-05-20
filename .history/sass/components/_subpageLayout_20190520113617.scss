@@ -28,14 +28,12 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 0 4rem;
         grid-template-areas: 
         "title title"
         "slider slider"
         "description animation"
         "information animation";
         @include respond(phone) {
-            padding: 0 2rem;
             grid-template-columns: 1fr;
             grid-template-areas: 
             "title"
@@ -53,6 +51,7 @@
             text-transform: uppercase;
             @include lineAfterHeadings;
             @include respond(phone) {
+                padding: 0 2rem;
                 font-size: 5rem;
                 @include lineAfterHeadingsMobile;
             }
@@ -68,15 +67,13 @@
             }
             @include respond(phone) {
                 font-size: $smaller-fs;
+                padding: 0 2rem;
             }
         }
     }
 
     &__slider {
         grid-area: slider;
-        img {
-            width: 100%;
-        }
     }
     &__description {
         grid-area: description;

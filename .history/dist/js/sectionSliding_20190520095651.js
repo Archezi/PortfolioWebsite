@@ -9,7 +9,7 @@ DOMLinks = {
 function moveTo(id) {
     var selectedDiv = document.querySelector(id);
     var selectedDivOffset = selectedDiv.offsetTop;
-    var selectedDivPosition = selectedDivOffset - 120;
+    var selectedDivPosition = selectedDivOffset - 120 + "px";
     window.scrollTo(0, selectedDivPosition);
     setTimeout( function() {
         document.getElementById("navi-toggle").checked = false;

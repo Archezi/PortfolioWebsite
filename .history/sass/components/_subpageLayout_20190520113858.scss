@@ -53,6 +53,7 @@
             text-transform: uppercase;
             @include lineAfterHeadings;
             @include respond(phone) {
+                padding: 0 2rem;
                 font-size: 5rem;
                 @include lineAfterHeadingsMobile;
             }
@@ -68,6 +69,7 @@
             }
             @include respond(phone) {
                 font-size: $smaller-fs;
+                padding: 0 2rem;
             }
         }
     }

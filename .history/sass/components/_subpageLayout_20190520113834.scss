@@ -35,7 +35,6 @@
         "description animation"
         "information animation";
         @include respond(phone) {
-            padding: 0 2rem;
             grid-template-columns: 1fr;
             grid-template-areas: 
             "title"
@@ -53,6 +52,7 @@
             text-transform: uppercase;
             @include lineAfterHeadings;
             @include respond(phone) {
+                padding: 0 2rem;
                 font-size: 5rem;
                 @include lineAfterHeadingsMobile;
             }
@@ -68,6 +68,7 @@
             }
             @include respond(phone) {
                 font-size: $smaller-fs;
+                padding: 0 2rem;
             }
         }
     }
