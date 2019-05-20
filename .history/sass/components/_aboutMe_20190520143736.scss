@@ -52,12 +52,12 @@
             font-size: $bigger-fs;
             font-family: $font-secondary;
             border: 1px solid $text-dark;
-            text-decoration: none;
-            color: $text-dark;
             text-align: center;
             line-height: 3rem;
             padding: 1rem;
-            
+            a {
+                text-decoration: none;
+            }
         }
         &__linkedIn {
             margin-left: 1rem;

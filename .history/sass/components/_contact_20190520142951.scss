@@ -1,7 +1,7 @@
 .contact {
     background: $background-dark; 
     color: $white;
-    
+    padding-bottom:  0;
 
     &__content {
         display: grid;
@@ -12,17 +12,24 @@
     }
     &__title {
         font-size: $heading-primary-fs;
-
+        @include respond(phone) {
+            font-size: $heading-primary-fs-mobile;
+        }
     }
     &__sub-heading {
-        font-size: $heading-tertiary-fs;
-        font-family: $font-secondary;
         margin-bottom: 2rem;
     }
+    &__sub-heading,
+    &__phone,
     &__email {
-
+        font-size: $heading-tertiary-fs;
+        font-family: $font-secondary; 
+    }
+    &__email {
+        margin-top: 5rem;
+        margin-bottom: 2rem;
     }
     &__phone {
-
+        margin: 2rem 0;
     }
 }

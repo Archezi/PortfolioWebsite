@@ -2,6 +2,7 @@
     background: $background-dark; 
     color: $white;
     padding-bottom:  0;
+    
 
     &__content {
         display: grid;
@@ -9,10 +10,15 @@
         text-align: center;
         max-width: $content-width;
         margin: 0 auto;
+        @include respond(phone) {
+            padding: 0 2rem 0;
+        }
     }
     &__title {
         font-size: $heading-primary-fs;
-
+        @include respond(phone) {
+            font-size: $heading-primary-fs-mobile;
+        }
     }
     &__sub-heading {
         margin-bottom: 2rem;
@@ -22,6 +28,9 @@
     &__email {
         font-size: $heading-tertiary-fs;
         font-family: $font-secondary; 
+        @include respond(phone) {
+            font-size: $bigger-fs;
+        }
     }
     &__email {
         margin-top: 5rem;
