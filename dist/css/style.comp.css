@@ -792,6 +792,8 @@ body {
         .skills__content .description__text {
           max-width: 100%;
           min-width: 0; } }
+      .skills__content .description__text-p {
+        margin-top: 2rem; }
     .skills__content .skill-list__wrapper {
       position: relative;
       display: grid;
@@ -883,6 +885,8 @@ body {
 
 .aboutMe .about__title, .aboutMe .about__sub-heading, .aboutMe .about__paragraph {
   max-width: 40rem; }
+  .aboutMe .about__title-p, .aboutMe .about__sub-heading-p, .aboutMe .about__paragraph-p {
+    margin-top: 2rem; }
 
 .aboutMe .about__title {
   font-size: 10rem; }
@@ -1037,6 +1041,17 @@ body {
       width: 5rem; }
   .modal .swiper-button-prev {
     color: #fff; }
+
+.noise {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  opacity: .02;
+  z-index: 99999; }
 
 .sub-page-wrapper {
   height: 100%;
