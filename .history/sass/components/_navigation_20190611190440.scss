@@ -136,7 +136,7 @@
         align-items: start;
         justify-content: center;
         padding-right: 20rem;
-        @include respond(tab-port) {
+        @include respond(phone) {
             padding: 0;
         }
         @include respond(phone-port) {

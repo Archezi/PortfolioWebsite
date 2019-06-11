@@ -289,8 +289,7 @@ body {
     font-size: 1.6rem;
     position: absolute;
     bottom: 0;
-    display: flex;
-    align-content: .navigation__legal -mobile-nav; }
+    display: flex; }
   .navigation__menu-nav {
     display: grid;
     justify-items: center;
@@ -298,6 +297,9 @@ body {
     min-width: 320px; }
   .navigation__item {
     padding: 1rem 0; }
+    @media only screen and (max-height: 41.4em) {
+      .navigation__item {
+        padding: 0; } }
   .navigation__item a {
     font-size: 3.2rem;
     line-height: 1.6;
@@ -308,6 +310,9 @@ body {
       .navigation__item a {
         grid-template-columns: 1fr;
         justify-content: end; } }
+    @media only screen and (max-height: 41.4em) {
+      .navigation__item a {
+        line-height: 1.4; } }
     .navigation__item a:hover {
       color: #FD664C; }
   .navigation__menu-contactInfo {
@@ -315,12 +320,18 @@ body {
     align-items: start;
     justify-content: center;
     padding-right: 20rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 56.25em) {
+      .navigation__menu-contactInfo {
+        padding: 0; } }
+    @media only screen and (max-height: 41.4em) {
       .navigation__menu-contactInfo {
         padding: 0; } }
     .navigation__menu-contactInfo .reach_out {
       margin-bottom: 5rem; }
       @media only screen and (max-width: 37.5em) {
+        .navigation__menu-contactInfo .reach_out {
+          margin: 0; } }
+      @media only screen and (max-height: 41.4em) {
         .navigation__menu-contactInfo .reach_out {
           margin: 0; } }
     .navigation__menu-contactInfo .info_title {
@@ -359,10 +370,17 @@ body {
         transform: translateX(0) scaleX(1); }
     .navigation__menu-contactInfo .social-media {
       padding: 2rem 0; }
+      @media only screen and (max-height: 41.4em) {
+        .navigation__menu-contactInfo .social-media {
+          padding: 0; } }
       .navigation__menu-contactInfo .social-media a {
         margin-right: 1rem; }
         .navigation__menu-contactInfo .social-media a svg {
           transition: fill 0.25s ease; }
+          @media only screen and (max-height: 41.4em) {
+            .navigation__menu-contactInfo .social-media a svg {
+              height: 2.5rem;
+              width: 2.5rem; } }
         .navigation__menu-contactInfo .social-media a:hover svg {
           fill: #FD664C; }
   .navigation__checkbox:checked ~ .navigation__menu-wrapper {

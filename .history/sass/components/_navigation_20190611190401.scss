@@ -136,7 +136,7 @@
         align-items: start;
         justify-content: center;
         padding-right: 20rem;
-        @include respond(tab-port) {
+        @include respond(phone) {
             padding: 0;
         }
         @include respond(phone-port) {
@@ -208,10 +208,6 @@
                 
                 svg {
                     transition: fill 0.25s ease;
-                    @include respond(phone-port) {
-                        height: 2.5rem;
-                        width: 2.5rem;
-                    }
                 }
                 
                 &:hover {
