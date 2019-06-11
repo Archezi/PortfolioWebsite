@@ -131,7 +131,7 @@ var controller = (function(UICtrl){
 
     // Set up event listeners
     var setupEventListeners = function() {
-        document.querySelector(DOM.navBtn).addEventListener('click', UICtrl.showOpenLogo);
+        document.querySelector(DOM.navBtn).addEventListener('click', UICtrl.showLogo);
         // nav links
 
         window.onload = function() {

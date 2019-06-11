@@ -20,7 +20,7 @@
                 </div>
                 <div class="navigation">
                     
-                    <input type="checkbox"  class="navigation__checkbox" id="navi-toggle" onclick="UIController.toggleCheckbox()" >
+                    <input  type="checkbox" class="navigation__checkbox" onclick="toggleCheckbox()" id="navi-toggle" >
                     <label for="navi-toggle" class="navigation__button">
                         <svg class="navigation__button-icon" viewBox="0 0 12 12"><path d="M0 5.5h11.7v.8H0z"></path><path d="M5.5 0h.8v11.7h-.8z"></path></svg>
                     </label>
@@ -31,11 +31,11 @@
                         <div class="navigation__menu-content">
                             <nav class="navigation__menu-nav">
                                 <ul class="navigation__list">
-                                    <li class="navigation__item navLink-home"><a  href="#landingPage" class="navigation__link" onclick="moveTo(DOMLinks.landingPageSection)" >Home</a></li>
-                                    <li class="navigation__item navLink-portfolio"><a  href="#portfolio" class="navigation__link" onclick="moveTo(DOMLinks.portfolioSection)">Portfolio</a></li>
-                                    <li class="navigation__item navLink-about"><a  href="#aboutMe" class="navigation__link" onclick="moveTo(DOMLinks.skillsSection)">About</a></li>
-                                    <li class="navigation__item navLink-skills"><a  href="#skills" class="navigation__link"  onclick="moveTo(DOMLinks.aboutMeSection)">Skills</a></li>
-                                    <li class="navigation__item navLink-contact"><a  href="#contact" class="navigation__link" onclick="moveTo(DOMLinks.contactSection)">Contact</a></li>
+                                    <li class="navigation__item"><a  href="#landingPage" class="navigation__link" onclick="moveTo(DOMLinks.landingPageSection)" >Home</a></li>
+                                    <li class="navigation__item"><a  href="#portfolio" class="navigation__link" onclick="moveTo(DOMLinks.portfolioSection)">Portfolio</a></li>
+                                    <li class="navigation__item"><a  href="#aboutMe" class="navigation__link" onclick="moveTo(DOMLinks.aboutMeSection)">About</a></li>
+                                    <li class="navigation__item"><a  href="#skills" class="navigation__link"  onclick="moveTo(DOMLinks.skillsSection)">Skills</a></li>
+                                    <li class="navigation__item"><a  href="#contact" class="navigation__link" onclick="moveTo(DOMLinks.contactSection)">Contact</a></li>
                                 </ul>
                             </nav>
         
@@ -325,13 +325,8 @@
                                             </div>
                                             <div class="portfolio__element--right">
                                                 <div class="portfolio__element--button-group">
-                                                    <div class="case-study-link">
-                                                        <a href="dist/pages/javascript/javascript.html">
-                                                            <span>View project</span>
-                                                        </a>
-                                                    </div>
                                                     <div class="direct-link">
-                                                        <a href="https://archezi.github.io/javascript-lab/">
+                                                        <a href="">
                                                             <div class="link-circle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52.974 52.974" style="enable-background:new 0 0 52.974 52.974;" xml:space="preserve" width="15px" height="15px">
                                                                 <g>
@@ -365,13 +360,9 @@
                                             </div>
                                             <div class="portfolio__element--right">
                                                 <div class="portfolio__element--button-group">
-                                                    <div class="case-study-link">
-                                                        <a href="dist/pages/angular/angular.html">
-                                                            <span>View project</span>
-                                                        </a>
-                                                    </div>
+                                                    
                                                     <div class="direct-link">
-                                                        <a href="https://archezi.github.io/AngularJS-Exercise/app/#/home">
+                                                        <a href="">
                                                             <div class="link-circle">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52.974 52.974" style="enable-background:new 0 0 52.974 52.974;" xml:space="preserve" width="15px" height="15px">
                                                                 <g>
@@ -426,16 +417,15 @@
                                         </h3>
                                     </div>
                                     <div class="description__text">
-                                        <p  id="paragraph-1"
+                                        <p  id="description__text"
                                             class="description__text-p">
+                                        
                                             I aim for performance, simplicity, and integrity in my work. I'm a stickler for a slick build process, whether that's planning application structure, linting integrations,  unit testing and so on. I write CSS modules predominately in SASS and when not working vanilla HTML, solutions such as AngularJs are my choice for DOM manipulation.
                                         </p>
-                                        <p  id="paragraph-2"
-                                            class="description__text-p">
+                                        <p class="description__text-p">
                                             I am currently able to create small scale applications both in vanilla JavaScript and popular framework such as AngularJs.  I hope I can progress to more challenging projects in the near future.
                                         </p>
-                                        <p  id="paragraph-3"
-                                            class="description__text-p">
+                                        <p class="description__text-p">
                                             Combined my skills of design tools such as PS, AI, and others with an understanding of UX and design means I can take web applications from start to finish.
                                         </p>
                                     </div>
@@ -519,7 +509,7 @@
                                         <a 
                                             class="about__cvButton"
                                             role="button" 
-                                            href="./dist/files/Lukasz Kaczmarek - CV.pdf">
+                                            href="./dist/files/Lukasz_Kaczmarek_CV.pdf">
                                             Curriculum Vitae
                                         </a>
                                         <a  class="about__linkedIn"

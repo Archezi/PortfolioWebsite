@@ -80,10 +80,10 @@ var UIController = (function(){
             var container = document.querySelector('.container');
             container.style.paddingRight = container.offsetWidth - container.clientWidth + 'px';
         },
-        // showLogo: function() {
-        //     var b = document.querySelector(DOMstrings.navBtn);
-        //     b.addEventListener('click', UIController.showOpenLogo() ) ;
-        // },
+        showLogo: function() {
+            var b = document.querySelector(DOMstrings.navBtn);
+            b.addEventListener('click', UIController.showOpenLogo ) ;
+        },
         showOpenLogo: function() {
             setTimeout(() => {
                 var logoLN = document.querySelector(DOMstrings.logoLN);
@@ -128,11 +128,14 @@ var UIController = (function(){
 var controller = (function(UICtrl){
     var DOM;
     DOM = UICtrl.getDOMstrings();
-
     // Set up event listeners
+    // On click
+    // 1. navigation 
+    // document.querySelector(DOM.navigationBtn).addEventListener('click', UICtrl.toggleCheckbox);
     var setupEventListeners = function() {
-        document.querySelector(DOM.navBtn).addEventListener('click', UICtrl.showOpenLogo);
+
         // nav links
+        // document.querySelector(DOM.linkHome).addEventListener('click', UICtrl.moveTo(DOM.landingPageSectionID));
 
         window.onload = function() {
             UICtrl.windowResize();

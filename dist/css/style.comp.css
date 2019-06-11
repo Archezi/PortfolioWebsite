@@ -153,6 +153,7 @@ body {
   /* exact value is given in JavaScript code */ }
   @media only screen and (max-width: 37.5em) {
     .section {
+      width: 100vw;
       padding-top: 2rem;
       padding-bottom: 5rem; } }
 

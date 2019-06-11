@@ -80,10 +80,10 @@ var UIController = (function(){
             var container = document.querySelector('.container');
             container.style.paddingRight = container.offsetWidth - container.clientWidth + 'px';
         },
-        // showLogo: function() {
-        //     var b = document.querySelector(DOMstrings.navBtn);
-        //     b.addEventListener('click', UIController.showOpenLogo() ) ;
-        // },
+        showLogo: function() {
+            var b = document.querySelector(DOMstrings.navBtn);
+            b.addEventListener('click', UIController.showOpenLogo() ) ;
+        },
         showOpenLogo: function() {
             setTimeout(() => {
                 var logoLN = document.querySelector(DOMstrings.logoLN);
@@ -131,7 +131,7 @@ var controller = (function(UICtrl){
 
     // Set up event listeners
     var setupEventListeners = function() {
-        document.querySelector(DOM.navBtn).addEventListener('click', UICtrl.showOpenLogo);
+        // document.querySelector(DOM.navBtn).addEventListener('click', UICtrl.showLogo);
         // nav links
 
         window.onload = function() {

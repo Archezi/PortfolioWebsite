@@ -51,9 +51,7 @@ body {
     overflow-x: hidden !important;
     padding-right: 0px; /* exact value is given in JavaScript code */
     @include respond(phone) {
-        width: 100vw;
-        // box-sizing: content-box;
-        // margin-top: 7.2rem;
+        margin-top: 7.2rem;
         padding-top: 2rem;
         padding-bottom: 5rem;
     }

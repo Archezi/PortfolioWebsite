@@ -22,7 +22,6 @@ function moveTo(id) {
         document.getElementById("navi-toggle").checked = false;
         console.log('link clicked');
         UIController.fadeIn('#container');
-        UIController.showOpenLogo();
     }, 200 );
 }
 
