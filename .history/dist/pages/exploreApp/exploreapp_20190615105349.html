@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gurajada|Open+Sans:300,400,600,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,700&display=swap" rel="stylesheet"> 
+    <!-- <link rel="stylesheet" href="dist/css/style.css"> -->
+    <link rel="stylesheet" href="../../css/style.comp.css">
+
+    <title>Lukasz Kaczmarek - Portfolio</title>
+</head>
+<body>
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <header class="header">
+                <div id="logo" class="logo">
+                    <a href="../../../index.html" class="logo__link" ><h2 class="logo__link-n">L.</h2><h2 class="logo__link-s">KACZMAREK</h2></a>
+                </div>
+                <div class="navigation">
+                    
+                    <input type="checkbox"  class="navigation__checkbox" id="navi-toggle" onclick="toggleCheckbox()" >
+                    <label for="navi-toggle" class="navigation__button">
+                        <svg class="navigation__button-icon" viewBox="0 0 12 12"><path d="M0 5.5h11.7v.8H0z"></path><path d="M5.5 0h.8v11.7h-.8z"></path></svg>
+                    </label>
+                    
+                    <div class="navigation__background"></div>
+                    
+                    <div class="navigation__menu-wrapper">
+                        <div class="navigation__menu-content">
+                            <nav class="navigation__menu-nav">
+                                <ul class="navigation__list">
+                                    <li class="navigation__item"><a  href="../../../index.html#landingPage" class="navigation__link" onclick="moveTo(DOMLinks.landingPageSection)" >Home</a></li>
+                                    <li class="navigation__item"><a  href="../../../index.html#portfolio" class="navigation__link" onclick="moveTo(DOMLinks.portfolioSection)">Portfolio</a></li>
+                                    <li class="navigation__item"><a  href="../../../index.html#aboutMe" class="navigation__link" onclick="moveTo(DOMLinks.aboutMeSection)">About</a></li>
+                                    <li class="navigation__item"><a  href="../../../index.html#skills" class="navigation__link"  onclick="moveTo(DOMLinks.skillsSection)">Skills</a></li>
+                                    <li class="navigation__item"><a  href="../../../index.html#contact" class="navigation__link" onclick="moveTo(DOMLinks.contactSection)">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="navigation__menu-contactInfo">
+                                <div class="reach_out">
+                                    <span class="info_title">Reach Out</span>
+                                    <span class="email_address">luka.kaczmarek@gmail.com</span>
+                                </div>
+                                <div class="social-media">
+                                    <span class="info_title"><strong>Meet me in Social media</strong></span>
+                                    <a href="https://github.com/Archezi">
+                                            <svg width="50px" height="50px"  viewBox="0 0 51.27 50"><path class="cls-1" d="M25.63,0a25.64,25.64,0,0,0-8.1,50c1.28.23,1.75-.56,1.75-1.24s0-2.63,0-4.77c-7.14,1.55-8.64-3-8.64-3-1.17-3-2.85-3.75-2.85-3.75-2.32-1.6.18-1.56.18-1.56a5.4,5.4,0,0,1,3.93,2.64c2.28,3.92,6,2.78,7.46,2.13A5.42,5.42,0,0,1,21,37c-5.7-.65-11.68-2.84-11.68-12.67a9.94,9.94,0,0,1,2.64-6.88,9.14,9.14,0,0,1,.25-6.78s2.15-.69,7,2.63a24.36,24.36,0,0,1,12.83,0c4.9-3.32,7.05-2.63,7.05-2.63a9.25,9.25,0,0,1,.25,6.78A9.94,9.94,0,0,1,42,24.29c0,9.85-6,12-11.71,12.65A6.14,6.14,0,0,1,32,41.69c0,3.43,0,6.19,0,7,0,.68.46,1.48,1.76,1.23A25.63,25.63,0,0,0,25.63,0Z"/><path class="cls-2" d="M9.71,36.8a.32.32,0,0,1-.44.08C9.08,36.8,9,36.62,9,36.5s.25-.17.44-.08.29.26.23.38Z"/><path class="cls-2" d="M10.75,38a.41.41,0,0,1-.53-.12c-.16-.18-.2-.42-.07-.53s.36-.06.52.12.2.42.08.53Z"/><path class="cls-2" d="M11.76,39.44c-.16.11-.42,0-.58-.22s-.15-.51,0-.61.41,0,.57.21.16.51,0,.62Z"/><path class="cls-2" d="M13.14,40.86c-.14.16-.44.12-.66-.09a.5.5,0,0,1-.14-.66c.14-.15.44-.11.66.1s.29.5.14.65Z"/><path class="cls-2" d="M15.05,41.69c-.06.2-.35.29-.64.21s-.48-.32-.42-.53.35-.29.64-.2.48.32.42.52Z"/><path class="cls-2" d="M17.15,41.85c0,.21-.24.38-.54.39s-.56-.17-.56-.38.24-.38.55-.39.55.17.55.38Z"/><path class="cls-2" d="M19.1,41.51c0,.21-.17.42-.48.48s-.57-.08-.61-.28.18-.42.48-.48.57.07.61.28Z"/></g></g></svg>
+                                    </a>
+                                    <a href="https://www.facebook.com/lukasz.kaczmarek.169">
+                                            <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M30.3,17.5h-2.6c-0.5,0-1,0.5-1,0.9v2.6 h3.6c-0.1,2-0.4,3.9-0.4,3.9h-3.2v11.5H22V25h-2.3v-3.9H22V18c0-0.6-0.1-4.5,4.8-4.5h3.5V17.5z"></path></svg>
+                                    </a>
+                                    <a href="https://twitter.com/Kaczm_Lu">
+                                            <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M34.1,20.3c0,0.2,0,0.4,0,0.6 c0,6.2-4.7,13.4-13.4,13.4c-2.7,0-5.1-0.8-7.2-2.1c0.4,0,0.7,0.1,1.1,0.1c2.2,0,4.2-0.8,5.9-2c-2.1,0-3.8-1.4-4.4-3.3 c0.3,0.1,0.6,0.1,0.9,0.1c0.4,0,0.8-0.1,1.2-0.2c-2.2-0.4-3.8-2.3-3.8-4.6c0,0,0,0,0-0.1c0.6,0.3,1.4,0.6,2.1,0.6 c-1.3-0.8-2.1-2.3-2.1-3.9c0-0.9,0.2-1.7,0.6-2.4c2.3,2.9,5.8,4.7,9.7,4.9c-0.3-1.3,0-2.7,0.6-4.1c2.7-2.5,5.8-2.1,7.4-0.3 c1.1-0.2,2.1-0.6,3-1.1c-0.4,1.1-1.1,2-2.1,2.6c1-0.1,1.9-0.4,2.7-0.7C35.9,18.8,35.1,19.6,34.1,20.3z"></path></svg>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/lukaszkaczmarek35/">
+                                            <svg width="50px" height="50px" viewBox="0 0 50 50"><path d="M29,22.1c-1.8,0-2.7,1-3.1,1.7v0h0c0,0,0,0,0,0v-1.5h-3.5c0,1,0,10.4,0,10.4h3.5V27c0-0.3,0-0.6,0.1-0.8 c0.3-0.6,0.8-1.3,1.8-1.3c1.3,0,1.8,1,1.8,2.4v5.5h3.5v-6C32.9,23.6,31.2,22.1,29,22.1z"></path><path d="M18.8,17.4c-1.2,0-2,0.8-2,1.8c0,1,0.7,1.8,1.9,1.8h0c1.2,0,2-0.8,2-1.8C20.7,18.1,20,17.4,18.8,17.4z"></path><rect x="17" y="22.4" width="3.5" height="10.4"></rect><path d="M25,0C11.2,0,0,11.2,0,25s11.2,25,25,25s25-11.2,25-25S38.8,0,25,0z M36.4,34.9c0,0.9-0.8,1.6-1.7,1.6H15.3 c-0.9,0-1.7-0.7-1.7-1.6V15.1c0-0.9,0.8-1.6,1.7-1.6h19.5c0.9,0,1.7,0.7,1.7,1.6V34.9z"></path></svg>
+                                    </a>
+                                        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="navigation__legal">
+                            <span class="navigation__legal-mobile-nav"> © 2018 Lukasz Kaczmarek. All Rights Reserved.</span>
+                        </div>
+                    </div>    
+                </div>
+        
+            </header>
+            <!-- HEADER fixed top -->
+            <div  class="wrapper">
+                <div id="container" class="container exploreApp-page sub-page-wrapper">
+                    <section class="project__case-studies section exploreApp-page ">
+                        <div class="project__landing-page">
+                            <div class="img-container">
+                                <img src="images/exploreapp_baner.jpg" alt="Explore app baner">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section exploreapp ">
+                        <div class="exploreapp__wrap">
+
+                            <div class="exploreapp__introduction">
+                                <div class="exploreapp__introduction-description">
+                                        <img src="images/background.jpg" alt="introduction_image" class="exploreapp__introduction-img">
+                                        <h2>Introduction</h2>
+                                        <p>
+                                            Explore App is based on a simple idea to create fully interactive 
+                                            preplanned  travel guide for simple and easy exploration of 
+                                            surrounding most popular and 
+                                            featured attractions in selected area. 
+                                        </p>
+                                        <a href="#">exploreapp</a>
+                                </div>
+                                <div class="exploreapp__introduction-smarthphone">
+                                    <img src="images/logo-on-screen.png" alt="smarthphone vector image">
+                                </div>
+                                <div class="exploreapp__introduction-logo">
+                                    <img src="images/logoIcon@x2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="exploreapp__typography">
+                                <div class="exploreapp__typography-title">
+                                    <h3 class="title-text">Typography & <span class="text-orange">Colors</span> </h3>
+                                </div>
+                                <div class="exploreapp__typography-roboto-title">
+                                    Roboto
+                                </div>
+                                <div class="exploreapp__typography-roboto-example">
+                                    <span class="text-default">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                    <span class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                    <span class="text-left">0 1 2 3 4 5 6 7 8</span>
+                                </div>
+                                <div class="exploreapp__typography-lato-title">Lato</div>
+                                <div class="exploreapp__typography-lato-example">
+                                    <span class="text-default">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                    <span class="text-uppercase">a b c d e f g h i j k l m n o p q r s t u v w x y z</span>
+                                    <span class="text-left">0 1 2 3 4 5 6 7 8</span>
+                                </div>
+                            </div>
+                            <div class="exploreapp__colorPalette">
+                                <div class="exploreapp__colorPalette-title">Colors</div>
+                                <div class="exploreapp__colorPalette-color-1">#3E454C</div>
+                                <div class="exploreapp__colorPalette-color-2">#E27A3F</div>
+                                <div class="exploreapp__colorPalette-color-3">#F2F2F2</div>
+                                <div class="exploreapp__colorPalette-color-example"></div>
+                            </div>
+                            <div class="exploreapp__wireframes">
+                                <div class="exploreapp__wireframes-title">
+                                    <h3>Sketch & <span class="text-orange">Wireframes</span></h3>
+                                </div>
+                                <div class="exploreapp__wireframes-sketches">
+                                    <div class="sketches-inner-wrap">
+                                        <img src="images/Frame@2x.jpg" alt="wireframe img of the exoploreapp" class="img-1">
+                                        <img src="images/Location@2x.jpg" alt="wireframe img of the exoploreapp" class="img-2">
+                                        <img src="images/Destination@2x.png" alt="wireframe img of the exoploreapp" class="img-3">
+                                    </div>
+                                </div>
+                                <div class="exploreapp__wireframes-makingFrames">
+                                    <h4 class="makingFrames-h4">Making the <span class="text-medium">wireframe</span></h4>
+                                    <p class="makingFrames-p">
+                                        After sketching the framework, I made these wireframes to quickly start create UI elements without thinking about the colors or the art direction.
+                                    </p>
+                                    <a id="sketchesSwitch" class="sketches-btn" href="#">VIEW<span class="text-bold">SKETCHES</span></a>
+                                </div>
+                                <div  class="exploreapp__wireframes-img_1 ">
+                                    <img src="images/img-1.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img_2">
+                                        <img src="images/img-2.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img_3">
+                                    <img src="images/img-3.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img_4">
+                                    <img src="images/img-4.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img_5">
+                                        <img src="images/img-5.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img_6">
+                                    <img src="images/img-6.jpg" alt="exploreapp screen of the application">
+                                </div>
+                                <div class="exploreapp__wireframes-img-syracuse">
+                                    <img src="images/syracuse@2x.jpg" alt="exploreapp screen of the application">
+                                </div>
+                            </div>
+                            <div class="exploreapp__projectInfo">
+                                <div class="exploreapp__projectInfo-description"></div>
+                                <div class="exploreapp__projectInfo-presentationImg"></div>
+                                <div class="exploreapp__projectInfo-links"></div>
+                            </div>
+
+                            
+                            
+                        </div>
+                        <div class="boxsample-container">
+                            <div class="boxSample"></div>
+                        </div>
+                    </section>
+                    <!-- <section class="section exploreapp wireframes">
+
+                        <div class="exploreapp__section-title">
+                            
+                        </div>
+                        <div class="exploreapp__sketches">
+                            <div class="exploreapp__sketches-container">
+                                <img src="images/Frame@2x.jpg" alt="wireframe img of the exoploreapp" class="img-1">
+                                <img src="images/Location@2x.jpg" alt="wireframe img of the exoploreapp" class="img-1">
+                                <img src="images/Destination@2x.png" alt="wireframe img of the exoploreapp" class="img-1">
+                            </div>
+                        </div>
+                        
+                        <div class="exploreapp__makingframes">
+                            <div class="exploreapp__makingframes-title"></div>
+                            <p class="exploreapp__makingframes-paragraph">
+                                    
+                            </p>
+                            <div class="exploreapp__makingframes-button">
+                                <span class="button-text">VIEW</span><span class="button-text text-bold">SKETCHES</span>
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-1">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-2">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__syracuse-img">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-3">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-4">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-5">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                        <div class="exploreapp__wireframes-6">
+                            <div class="exploreapp__wireframes-img-container">
+                                
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section exploreapp project-description">
+                        
+                        <div class="exploreapp__section-title">
+                            <span class="white-text">Project </span><span class="orange-text">& Development</span>
+                        </div>
+                        <div class="exploreapp__project-description">
+                            <div class="exploreapp__project-description-container">
+                                    Concept of this project was created to visualize my idea for travel application and as perfect playground for developing my skills in web technologies. 
+                            </div>
+                        </div>
+                        <div class="exploreapp__project-landing-page">
+                            <img src="images/promoweb@2x.jpg" alt="promotional website screen">
+                        </div>
+                        <div class="exploreapp__project-utilities">
+                            <div class="exploreapp__project-technologies">
+                                <div class="exploreapp__project-technologies-title">
+                                    Technologies used
+                                </div>
+                                <div class="exploreapp__project-technologies-icons">
+                                    <ul>
+                                        <li><img src="images/AngularLogo@2x.png" alt="AngularJs logo icon"></li>
+                                        <li><img src="images/ioniclogo.png" alt="Ionic logo icon"></li>
+                                        <li><img src="images/materialized-icon@2x.png" alt="Materialized logo icon"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="exploreapp__project-links">
+                                <div class="exploreapp__project-links-title">
+                                    Resource and links
+                                </div>
+                                <div class="exploreapp__project-links-promoWeb">
+                                    <div class="link-title">Promotional Website</div>
+                                    <div class="link-buttons">
+                                        <a href="#" class="github-button">
+                                            <div class="github-icon">
+                                                    <svg width="50px" height="50px"  viewBox="0 0 51.27 50"><path class="cls-1" d="M25.63,0a25.64,25.64,0,0,0-8.1,50c1.28.23,1.75-.56,1.75-1.24s0-2.63,0-4.77c-7.14,1.55-8.64-3-8.64-3-1.17-3-2.85-3.75-2.85-3.75-2.32-1.6.18-1.56.18-1.56a5.4,5.4,0,0,1,3.93,2.64c2.28,3.92,6,2.78,7.46,2.13A5.42,5.42,0,0,1,21,37c-5.7-.65-11.68-2.84-11.68-12.67a9.94,9.94,0,0,1,2.64-6.88,9.14,9.14,0,0,1,.25-6.78s2.15-.69,7,2.63a24.36,24.36,0,0,1,12.83,0c4.9-3.32,7.05-2.63,7.05-2.63a9.25,9.25,0,0,1,.25,6.78A9.94,9.94,0,0,1,42,24.29c0,9.85-6,12-11.71,12.65A6.14,6.14,0,0,1,32,41.69c0,3.43,0,6.19,0,7,0,.68.46,1.48,1.76,1.23A25.63,25.63,0,0,0,25.63,0Z"/><path class="cls-2" d="M9.71,36.8a.32.32,0,0,1-.44.08C9.08,36.8,9,36.62,9,36.5s.25-.17.44-.08.29.26.23.38Z"/><path class="cls-2" d="M10.75,38a.41.41,0,0,1-.53-.12c-.16-.18-.2-.42-.07-.53s.36-.06.52.12.2.42.08.53Z"/><path class="cls-2" d="M11.76,39.44c-.16.11-.42,0-.58-.22s-.15-.51,0-.61.41,0,.57.21.16.51,0,.62Z"/><path class="cls-2" d="M13.14,40.86c-.14.16-.44.12-.66-.09a.5.5,0,0,1-.14-.66c.14-.15.44-.11.66.1s.29.5.14.65Z"/><path class="cls-2" d="M15.05,41.69c-.06.2-.35.29-.64.21s-.48-.32-.42-.53.35-.29.64-.2.48.32.42.52Z"/><path class="cls-2" d="M17.15,41.85c0,.21-.24.38-.54.39s-.56-.17-.56-.38.24-.38.55-.39.55.17.55.38Z"/><path class="cls-2" d="M19.1,41.51c0,.21-.17.42-.48.48s-.57-.08-.61-.28.18-.42.48-.48.57.07.61.28Z"/></g></g></svg>
+                                            </div>
+                                            <span class="github-text">GitHub</span>
+                                        </a>
+                                        <a href="#" class="visitWebsite-button">
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="exploreapp__project-links-promoWeb">
+                                    <div class="link-title">Application Demo</div>
+                                    <div class="link-buttons">
+                                        <a href="#" class="github-button">
+                                            <div class="github-icon">
+                                                    <svg width="50px" height="50px"  viewBox="0 0 51.27 50"><path class="cls-1" d="M25.63,0a25.64,25.64,0,0,0-8.1,50c1.28.23,1.75-.56,1.75-1.24s0-2.63,0-4.77c-7.14,1.55-8.64-3-8.64-3-1.17-3-2.85-3.75-2.85-3.75-2.32-1.6.18-1.56.18-1.56a5.4,5.4,0,0,1,3.93,2.64c2.28,3.92,6,2.78,7.46,2.13A5.42,5.42,0,0,1,21,37c-5.7-.65-11.68-2.84-11.68-12.67a9.94,9.94,0,0,1,2.64-6.88,9.14,9.14,0,0,1,.25-6.78s2.15-.69,7,2.63a24.36,24.36,0,0,1,12.83,0c4.9-3.32,7.05-2.63,7.05-2.63a9.25,9.25,0,0,1,.25,6.78A9.94,9.94,0,0,1,42,24.29c0,9.85-6,12-11.71,12.65A6.14,6.14,0,0,1,32,41.69c0,3.43,0,6.19,0,7,0,.68.46,1.48,1.76,1.23A25.63,25.63,0,0,0,25.63,0Z"/><path class="cls-2" d="M9.71,36.8a.32.32,0,0,1-.44.08C9.08,36.8,9,36.62,9,36.5s.25-.17.44-.08.29.26.23.38Z"/><path class="cls-2" d="M10.75,38a.41.41,0,0,1-.53-.12c-.16-.18-.2-.42-.07-.53s.36-.06.52.12.2.42.08.53Z"/><path class="cls-2" d="M11.76,39.44c-.16.11-.42,0-.58-.22s-.15-.51,0-.61.41,0,.57.21.16.51,0,.62Z"/><path class="cls-2" d="M13.14,40.86c-.14.16-.44.12-.66-.09a.5.5,0,0,1-.14-.66c.14-.15.44-.11.66.1s.29.5.14.65Z"/><path class="cls-2" d="M15.05,41.69c-.06.2-.35.29-.64.21s-.48-.32-.42-.53.35-.29.64-.2.48.32.42.52Z"/><path class="cls-2" d="M17.15,41.85c0,.21-.24.38-.54.39s-.56-.17-.56-.38.24-.38.55-.39.55.17.55.38Z"/><path class="cls-2" d="M19.1,41.51c0,.21-.17.42-.48.48s-.57-.08-.61-.28.18-.42.48-.48.57.07.61.28Z"/></g></g></svg>
+                                            </div>
+                                            <span class="github-text">GitHub</span>
+                                        </a>
+                                        <a href="#" class="visitWebsite-button">
+                                            Visit Website
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="exploreapp__project-links-promoWeb">
+                                    <div class="link-title">Invision Demo</div>
+                                    <div class="link-buttons">
+                                        
+                                        <a href="#" class="visitWebsite-button">
+                                            TEST IT OUT
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section> -->
+                    <section class="section legal">
+                        <div class="legal__copyright">COPYRIGHT © 2018 LUKASZ KACZMAREK</div>
+                    </section><!-- legal section end  -->
+                </div>
+            </div>
+            <footer class="footer">
+            </footer>
+        </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="../../js/jquery.min.js"></script>
+    <!-- <script src="../../js/barba.min.js"></script>
+    <script src="../../js/pageTransition.js"></script> -->
+
+    <script src="../../../node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="../../js/sectionSliding.js"></script>
+    <script src="../../js/myscript.js"></script>
+</body>
+</html>

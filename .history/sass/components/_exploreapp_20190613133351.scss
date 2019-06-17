@@ -1,0 +1,86 @@
+.exploreapp {
+    background-color: $explore-background-section;
+    &__wrap { 
+    }
+    &__introduction {
+        & * {
+            background-color: $explore-background-tiles;
+        }
+        &-description {
+        }
+        &-smarthphone {
+        }
+        &-logo {
+        }
+    }
+    &__typography {
+        
+        & * {
+            background-color: $explore-background-tiles;
+        }
+
+        &-title {
+        }
+        &-roboto-title {
+        }
+        &-roboto-example {
+        }
+        &-lato-title {
+        }
+        &-lato-example {
+        }
+    }
+    &__colorPalette{
+        & * {
+            background-color: $explore-background-tiles;
+        }
+        &-title {
+        }
+        &-color-1 {
+        }
+        &-color-2 {
+        }
+        &-color-3 {
+        }
+        &-color-example {
+        }
+    }
+    &__wireframes {
+        & * {
+            background-color: $explore-background-tiles;
+        }
+        &-title {
+        }
+        &-sketches {
+        }
+        &-makingFrames {
+        }
+        &-img_1 {
+        }
+        &-img_2 {
+        }
+        &-img_3 {
+        }
+        &-img_4 {
+        }
+        &-img_5 {
+        }
+        &-img_6 {
+        }
+        &-img_syracuse {
+        }
+
+    }
+    &__projectInfo {
+        & * {
+            background-color: $explore-background-tiles;
+        }
+        &-description {
+        }
+        &-presentationImg {
+        }
+        &-links {
+        }
+    }
+   
+}

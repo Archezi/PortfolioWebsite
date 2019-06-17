@@ -1,0 +1,16 @@
+.exploreapp {
+
+    &__intro-wrap { 
+        max-width: 120rem;
+        box-sizing: border-box;
+        display: grid;
+        padding: 0 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "A A B B"
+        "A A B B";
+    
+    }
+}

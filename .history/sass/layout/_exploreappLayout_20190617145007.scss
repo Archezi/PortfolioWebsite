@@ -1,0 +1,220 @@
+.exploreapp {
+
+    .boxsample-container{
+        width: 100%;
+        display: grid;
+        grid-gap: 2rem;
+        padding: 0 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        @include respond(tab-land) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include respond(tab-port) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__wrap { 
+        max-width: 180rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: grid;
+        padding: 0 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "A A A A A"
+        "B B B B B"
+        "C C C C C"
+        "D D D D D"
+        "E E E E E";
+        @include respond(retina-lap) {
+            max-width: 180rem;
+        }
+        @include respond(tab-land) {
+            max-width: 120rem;
+            
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "A "
+            "B "
+            "C "
+            "D "
+            "E ";
+        }
+
+    
+    }
+    
+    &__introduction {
+        grid-area: A;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        // grid-template-rows: repeat(2, 30rem);
+        grid-template-areas: 
+        "A A A A C"
+        "A A A A B";
+
+        @include respond(tab-port) {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: 
+            "A A A A"
+            "A A A A"
+            "A A A A"
+            "C C B B"
+            "C C B B";
+            
+
+        }
+        &-description {
+            grid-area: A;
+            position: relative;
+        }
+        &-smarthphone {
+            grid-area: B;
+        }
+        &-logo {
+            grid-area: C;
+        }
+    }
+    &__typography {
+        grid-area: B;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto repeat(2, 30rem);
+        grid-template-areas: 
+        "A A A A A"
+        "B C C C C"
+        "D E E E E";
+        
+
+        &-title {
+            grid-area: A;
+        }
+        &-roboto-title {
+            grid-area: B;
+        }
+        &-roboto-example {
+            grid-area: C;
+        }
+        &-lato-title {
+            grid-area: D;
+        }
+        &-lato-example {
+            grid-area: E;
+        }
+    }
+    &__colorPalette{
+        grid-area: C;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 30rem;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "A B C D . ";
+        @include respond(tab-port) {
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-areas: 
+            "A B C C D"
+        }
+        &-title {
+            grid-area: A;
+        }
+        &-color-1 {
+            grid-area: B;
+        }
+        &-color-2 {
+            grid-area: C;
+        }
+        &-color-3 {
+            grid-area: D;
+        }
+        // &-color-example {
+        //     grid-area: E;
+        // }
+    }
+    &__wireframes {
+        grid-area: D;
+        display: grid;
+        grid-gap:2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto repeat(2, 24.8rem);
+        grid-template-areas: 
+        "A A A A A"
+        "B B C D E"
+        "J F G H I ";
+        @include respond(tab-port) {
+            grid-template-columns: repeat(4, 1fr);
+            // grid-template-rows:  auto 30rem 30rem 30rem 30rem;
+            // grid-template-rows: fit-content(100%);
+            grid-template-areas: 
+            "A A A "
+            "B B C "
+            "D E F "
+            "F G H "
+            "I J . ";
+        }
+        &-title {
+            grid-area: A;
+        }
+        &-sketches {
+            grid-area: B;
+        }
+        &-makingFrames {
+            grid-area: C;
+        }
+        &-img_1 {
+            grid-area: D;
+        }
+        &-img_2 {
+            grid-area: E;
+        }
+        &-img_3 {
+            grid-area: F;
+        }
+        &-img_4 {
+            grid-area: G;
+        }
+        &-img_5 {
+            grid-area: H;
+        }
+        &-img_6 {
+            grid-area: I;
+        }
+        &-img_syracuse {
+            grid-area: J;
+        }
+
+    }
+    &__projectInfo {
+        grid-area: E;
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "T T T T T"
+        "A A B B C";
+        &-title {
+            grid-area: T;
+        }
+        &-description {
+            grid-area: A;
+        }
+        &-presentationImg {
+            grid-area: B;
+        }
+        &-links {
+            grid-area: C;
+        }
+    }
+   
+}

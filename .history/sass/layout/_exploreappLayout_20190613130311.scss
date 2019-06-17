@@ -1,0 +1,143 @@
+.exploreapp {
+
+    &__intro-wrap { 
+        max-width: 120rem;
+        box-sizing: border-box;
+        display: grid;
+        padding: 0 2rem;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        "A A A A A"
+        "B B B B B"
+        "C C C C C"
+        "D D D D D"
+        "E E E E E";
+
+    
+    }
+    &__introduction {
+        grid-area: A;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "A A A A C"
+        "A A A A B";
+        &-description {
+            grid-area: A;
+            position: relative;;
+        }
+        &-smarthphone {
+            grid-area: B;
+        }
+        &-logo {
+            grid-area: C;
+        }
+    }
+    &__typography {
+        grid-area: B;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "A A A A A"
+        "B C C C C"
+        "D E E E E";
+
+        &-title {
+            grid-area: A;
+        }
+        &-roboto-title {
+            grid-area: B;
+        }
+        &-roboto-example {
+            grid-area: C;
+        }
+        &-lato-title {
+            grid-area: D;
+        }
+        &-lato-example {
+            grid-area: E;
+        }
+    }
+    &__colorPalette{
+        grid-area: C;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "A A A A A"
+        "B C D E .";
+        &-title {
+            grid-area: A;
+        }
+        &-color-1 {
+            grid-area: B;
+        }
+        &-color-2 {
+            grid-area: C;
+        }
+        &-color-3 {
+            grid-area: D;
+        }
+        &-color-example {
+            grid-area: E;
+        }
+    }
+    &__wireframes {
+        grid-area: D;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "A A A A A"
+        "B B C D E"
+        "F G H I J"
+        &-title {
+            grid-area: A;
+        }
+        &-sketches {
+            grid-area: B;
+        }
+        &-makingFrames {
+            grid-area: C;
+        }
+        &-img_1 {
+            grid-area: D;
+        }
+        &-img_2 {
+            grid-area: E;
+        }
+        &-img_3 {
+            grid-area: F;
+        }
+        &-img_4 {
+            grid-area: G;
+        }
+        &-img_5 {
+            grid-area: H;
+        }
+        &-img_6 {
+            grid-area: I;
+        }
+        &-img_syracuse {
+            grid-area: J;
+        }
+
+    }
+    &__projectInfo {
+        grid-area: E;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas: 
+        "A A B B C";
+        &-description {
+            grid-area: A;
+        }
+        &-presentationImg {
+            grid-area: B;
+        }
+        &-links {
+            grid-area: C;
+        }
+    }
+   
+}

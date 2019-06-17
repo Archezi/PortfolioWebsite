@@ -1,0 +1,69 @@
+.exploreApp-page {
+    // background: $explore-background-section;
+}
+.styleguide-box {
+    // min-height: 20rem;
+}
+.exploreapp {
+    background: $explore-background-section;
+    &__intro-wrap {
+        display: grid;
+        padding: 0 2rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2rem;
+        grid-template-areas: 
+        "A A B B"
+        "A A B B";
+
+    }
+    &__introduction {
+        grid-area: A;
+        position: relative;
+        background-color: #2e2e2e;
+        background-image: url(../pages/exploreApp/images/phone&tablet_introduction.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position:  right center;
+        min-height: 40rem;
+        border: solid 2rem $explore-orange;
+        &-title h2 {
+            font-family: 'Roboto', sans-serif;
+            padding: 2rem;
+            font-size: 3.6rem;
+            color: $white;
+            text-transform: uppercase;
+        }
+
+        &-description {
+            font-family: 'Lato', sans-serif;
+            color: $white;
+            font-size: $default-fs;
+            line-height: 1.4;
+            font-weight: 300;
+            max-width: 50%;
+            padding: 2rem;
+        }
+        &-links {
+            padding: 2rem;
+            position: absolute;
+            bottom: 2rem;
+            a {
+                font-size: $heading-tertiary-fs;
+                text-decoration: underline;
+                color: $white;
+                transition: color 0.35s ease-in-out;
+                &:hover {
+                    color: $explore-orange;
+                }
+            }
+        }
+    }
+
+    &__styleguide {
+        grid-area: B;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 20rem auto;
+    }
+}

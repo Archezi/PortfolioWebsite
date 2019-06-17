@@ -1,0 +1,78 @@
+
+.styleguide-box {
+    background: $explore-background-tiles;
+}
+.exploreapp {
+    background: $explore-background-section;
+
+    &__introduction {
+        grid-area: A;
+        position: relative;
+        background-color: #2e2e2e;
+        
+        
+        border: solid 2rem $explore-orange;
+        &-img {
+            position: absolute;
+            width: 100%;
+            height: auto;
+            top: 0;
+            left: 0;
+            z-index: 11;
+        }
+        &-title h2 {
+            position: relative;
+            font-family: 'Roboto', sans-serif;
+            padding: 2rem;
+            font-size: $heading-secondary-fs;
+            color: $white;
+            text-transform: uppercase;
+            z-index: 12;
+        }
+
+        &-description {
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            color: $white;
+            font-size: $default-fs;
+            line-height: 1.4;
+            font-weight: 300;
+            max-width: 50%;
+            padding: 2rem;
+            z-index: 12;
+        }
+        &-links {
+            padding: 2rem;
+            position: absolute;
+            bottom: 2rem;
+            a {
+                font-size: $heading-tertiary-fs;
+                color: $white;
+                transition: color 0.35s ease-in-out;
+                &:hover {
+                    color: $explore-orange;
+                    text-decoration: underline;
+
+                }
+            }
+            z-index: 12;
+        }
+    }
+
+    &__styleguide {
+        grid-area: B;
+        display: grid;
+        grid-gap: 1rem;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 30rem auto;
+    }
+    &__typography-title {
+        grid-area: T;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: $heading-secondary-fs;
+        color: $white;
+    }
+}

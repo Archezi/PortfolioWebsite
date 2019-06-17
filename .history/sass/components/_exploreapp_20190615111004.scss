@@ -1,0 +1,317 @@
+$inner-padding: 2rem;
+$total-padding: 4rem;
+.exploreapp {
+    background-color: $explore-background-section;
+    &__wrap { 
+    }
+    &__introduction {
+        & * {
+            color: $explore-text;
+        }
+        &-description {
+            background-color: $explore-background-tiles;
+            padding: $inner-padding;
+            border: solid 3rem $explore-orange;
+            img {
+                z-index: 11;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: auto;
+                max-height: 100%;
+            }
+            h2 {
+                font-family: 'Roboto', sans-serif;
+                position: relative;
+                z-index: 12;
+                font-size: $heading-secondary-fs;
+                margin: $inner-padding 0;
+            }
+            p {
+                max-width: 40rem;
+                background: none;
+                font-family: 'Lato', sans-serif;
+                position: relative;
+                z-index: 12;
+                font-size: $heading-tertiary-fs;
+                line-height: 1.6;
+                font-weight: 300;
+                margin: $total-padding 0;
+            }
+            a {
+                position: absolute;
+                bottom: 2rem;
+                left: 2rem;
+                z-index: 12;
+                font-family: 'Lato', sans-serif;
+                line-height: 1.6;
+                font-size: $heading-tertiary-fs;
+            }
+
+        }
+        &-smarthphone {
+            background-color: $explore-text;
+            position: relative;
+            img {
+                @include absCenter;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: 100%;
+            }
+        }
+        &-logo {
+            background-color: $explore-background-tiles;
+            position: relative;
+            img {
+                @include absCenter;
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: 100%;
+            }
+        }
+    }
+    &__typography {
+        
+        & * {
+            
+        }
+
+        &-title {
+            padding: 0 $total-padding;
+            font-family: 'Roboto', sans-serif;
+            h3 {
+                font-size: $heading-secondary-fs;
+                font-weight: 300;
+                color: $explore-text;
+
+
+                span {
+                    color: $explore-orange;
+                }
+            }
+        }
+        &-roboto-title,
+        &-lato-title { 
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $explore-background-tiles;
+            color: $explore-text;
+            font-size: $heading-secondary-fs;
+        }
+        
+        &-roboto-example,
+        &-lato-example { 
+            padding: $inner-padding $total-padding;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: $explore-background-tiles;
+            color: $explore-text;
+            font-weight: 300;
+            line-height: 1.6;
+            font-size: $heading-tertiary-fs;
+        }
+        &-roboto-title {
+            font-family: 'Roboto', sans-serif;
+        }
+        &-roboto-example {
+            font-family: 'Roboto', sans-serif;
+        }
+        &-lato-title {
+            font-family: 'Lato', sans-serif;
+        }
+        &-lato-example {
+            font-family: 'Lato', sans-serif;
+        }
+    }
+    &__colorPalette{
+        & * {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $explore-text;
+            
+            font-family: 'Roboto', sans-serif;
+        }
+        &-title {
+            background-color: $explore-background-tiles;
+            font-size: $heading-secondary-fs;
+
+        }
+        &-color-1 {
+            background-color: $explore-color-1;
+            font-size: $heading-tertiary-fs;
+        }
+        &-color-2 {
+            background-color: $explore-color-2;
+            font-size: $heading-tertiary-fs;
+        }
+        &-color-3 {
+            background-color: $explore-color-3;
+            font-size: $heading-tertiary-fs;
+            color: $text-dark;
+        }
+        &-color-example {
+        }
+    }
+    &__wireframes {
+       
+        &-title {
+            padding: 0 $total-padding;
+            font-family: 'Roboto', sans-serif;
+            h3 {
+                font-size: $heading-secondary-fs;
+                font-weight: 300;
+                color: $explore-text;
+                span {
+                    color: $explore-orange;
+                }
+            }
+        }
+        &-sketches {
+            padding: 2rem;
+            background-color: $explore-background-tiles;
+            .sketches-inner-wrap {
+                // padding: 1rem;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 0.5rem;
+                height: 100%;
+                // display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    margin-right: 0.5rem;
+                    max-width: 100%;
+                    max-height: 100%;
+                    overflow: hidden;
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+        &-makingFrames {
+            position: relative;
+            background-color: $explore-background-tiles;
+            font-family: 'Roboto', sans-serif;
+            padding: 2rem;
+            color: $explore-text;
+            h4.makingFrames-h4 {
+                font-weight: 300;
+                font-size: $bigger-fs;
+                margin: 0 auto 2rem;
+            }
+            p.makingFrames-p {
+                font-weight: 300;
+                font-size: $smaller-fs;
+                line-height: 1.4;
+                margin-bottom: 4rem;
+            }
+            a.sketches-btn {
+                position: absolute;
+                bottom: 2rem;
+                left: 2rem;
+                color: $explore-orange;
+                padding: 2rem 1rem;
+                display: flex;
+                height: 3rem;
+                border-radius: 1rem;
+                width: 15rem;
+                align-items: center;
+                justify-content: center;
+                border: solid 1px $explore-orange;
+                text-decoration: none;
+                font-size: $bigger-fs;
+
+            }
+        }
+        &-img_1 img, 
+        &-img_2 img, 
+        &-img_3 img, 
+        &-img_4 img, 
+        &-img_5 img, 
+        &-img_6 img,
+        &-img-syracuse img {
+            @include absCenter;
+            // width: auto;
+            // max-width: 100%;
+            // height: 100%;
+            width: auto;
+            height: 100%;
+            max-height: 100%;
+
+           
+        }
+        &-img_1, 
+        &-img_2, 
+        &-img_3, 
+        &-img_4, 
+        &-img_5, 
+        &-img_6,
+        &-img-syracuse {
+            background-color: $explore-background-tiles;
+            box-sizing: content-box;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            margin:  1rem;
+            // min-height: 100%;
+            
+            
+        }  
+        &-img_1 {
+            
+            // background-image: url(../../dist/pages/exploreApp/images/img-1.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+            
+           
+        }
+        &-img_2 {
+            // background-image: url(../../dist/pages/exploreApp/images/img-2.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+        &-img_3 {
+            // background-image: url(../../dist/pages/exploreApp/images/img-3.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+        &-img_4 {
+            // background-image: url(../../dist/pages/exploreApp/images/img-4.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+        &-img_5 {
+            // background-image: url(../../dist/pages/exploreApp/images/img-5.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+        &-img_6 {
+            // background-image: url(../../dist/pages/exploreApp/images/img-6.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+        &-img-syracuse {
+            // background-image: url(../../dist/pages/exploreApp/images/syracuse.jpg);
+            // background: url(../pages/exploreApp/images/img-1.jpg);
+        }
+
+    }
+    &__projectInfo {
+        & * {
+            background-color: $explore-background-tiles;
+        }
+        &-description {
+        }
+        &-presentationImg {
+        }
+        &-links {
+        }
+    }
+   
+}

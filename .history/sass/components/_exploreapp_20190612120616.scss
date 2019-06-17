@@ -1,0 +1,12 @@
+.exploreApp-page {
+    // background: $explore-background-section;
+}
+.exploreapp {
+    background: $explore-background-section;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+    &__introduction {
+
+    }
+}
