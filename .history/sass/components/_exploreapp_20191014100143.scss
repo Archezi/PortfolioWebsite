@@ -291,22 +291,6 @@ $total-padding: 4rem;
 
             }
         }
-        &-img_1, 
-        &-img_2, 
-        &-img_3, 
-        &-img_4, 
-        &-img_5, 
-        &-img_6,
-        &-img-syracuse {
-            background-color: $explore-background-tiles;
-            position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-            position: relative;
-            height: $imgSize;
-            width: 100%;
-        }  
         &-img_1 img, 
         &-img_2 img, 
         &-img_3 img, 
@@ -329,7 +313,20 @@ $total-padding: 4rem;
 
            
         }
-        
+        &-img_1, 
+        &-img_2, 
+        &-img_3, 
+        &-img_4, 
+        &-img_5, 
+        &-img_6,
+        &-img-syracuse {
+            background-color: $explore-background-tiles;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }  
         &-img_1 {
         }
         &-img_2 {

@@ -1633,6 +1633,15 @@ body {
       border: solid 1px #e27a3f;
       text-decoration: none;
       font-size: 1.8rem; }
+  .exploreapp__wireframes-img_1, .exploreapp__wireframes-img_2, .exploreapp__wireframes-img_3, .exploreapp__wireframes-img_4, .exploreapp__wireframes-img_5, .exploreapp__wireframes-img_6, .exploreapp__wireframes-img-syracuse {
+    background-color: #2e2e2e;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: calc(100vw - 2rem);
+    width: 100%; }
   .exploreapp__wireframes-img_1 img,
   .exploreapp__wireframes-img_2 img,
   .exploreapp__wireframes-img_3 img,
@@ -1658,16 +1667,8 @@ body {
       .exploreapp__wireframes-img-syracuse img {
         position: relative;
         max-width: 100%;
-        width: 100%;
         padding: 0;
-        height: auto; } }
-  .exploreapp__wireframes-img_1, .exploreapp__wireframes-img_2, .exploreapp__wireframes-img_3, .exploreapp__wireframes-img_4, .exploreapp__wireframes-img_5, .exploreapp__wireframes-img_6, .exploreapp__wireframes-img-syracuse {
-    background-color: #2e2e2e;
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative; }
+        height: 100%; } }
   .exploreapp__wireframes-img-syracuse {
     padding: 0; }
   .exploreapp__projectInfo {
