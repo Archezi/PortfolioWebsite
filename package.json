@@ -19,7 +19,7 @@
     "barba.js": "^1.0.0",
     "concat": "^1.0.3",
     "isotope-layout": "^3.0.6",
-    "jquery": "^3.3.1",
+    "jquery": "^3.4.0",
     "node-sass": "^4.5.3",
     "nodemon": "^1.15.0",
     "npm-run-all": "^4.1.1",
