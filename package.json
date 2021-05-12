@@ -26,6 +26,6 @@
     "postcss-cli": "^4.1.1"
   },
   "dependencies": {
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   }
 }
